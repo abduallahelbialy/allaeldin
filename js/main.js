@@ -79,3 +79,19 @@ tabs.forEach((tab) => {
   });
 });
   ////tabs////
+  ///purpleBox///
+  document
+    .getElementById("staticBackdropLabel")
+    .addEventListener("click", function () {
+      const box = document.getElementById("purpleBox");
+      const box2 = document.getElementById("purpleBox2");
+      box.style.display = box.style.display === "none" ? "block" : "none";
+      box2.style.display = box2.style.display === "none" ? "block" : "none";
+    });
+  document
+    .getElementById("staticBackdropLabel2")
+    .addEventListener("click", function () {
+      const box2 = document.getElementById("purpleBox2");
+      box2.style.display = box2.style.display === "none" ? "block" : "none";
+    });
+      ///purpleBox///
