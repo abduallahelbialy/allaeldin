@@ -10,7 +10,9 @@
   --color-nav: #1f5b61;
   --color-mod: #1f5b61;
   --color-text: #4f4f4f;
+  --color-lable:#1f5b61;
   --color-footer:#131313;
+  --bg-fo:#F6E5F6;
   --bg-nav: linear-gradient(to right, #decdde, #eedbee);
   --bg-btn: linear-gradient(to left, #f0ddf0, #d9cdd9);
   --bg-shdow: 0 4px 10px #c8b8c8, 0 2px 5px #d5c4d5;
@@ -36,6 +38,7 @@
   --bg-mod: #3b3b3b;
   --color-mod: #f6f6f6;
   --color-footer:#f6f6f6;
+  --bg-fo:#3c3d3f;
 
   --color-nav: #a8a8a8;
   --bg-nav: linear-gradient(to right, #3c3d3e, #3c3d3e);
@@ -58,6 +61,8 @@
   --bg-of: #3a3a3a;
   --bg-color: #121212;
   --text-color: #fff;
+  --color-lable:#fff;
+
 }
 
 .theme-toggle button {
@@ -197,6 +202,9 @@ body {
     transition: all 0.3s ease-in-out;
     font-size: 9px;
   }
+  .tab-content{
+    width: 500px !important;
+  }
   .btn-trans {
     width: 70px;
   }
@@ -214,6 +222,9 @@ body {
     border-radius: 24px;
     transition: all 0.3s ease-in-out;
     font-size: 9px !important;
+  }
+  .tab-content{
+    width: 500px !important;
   }
   .btn-trans {
     width: 70px;
@@ -389,7 +400,7 @@ body {
   font-size: 22px;
 }
 .textlabel {
-  color: var(--color-nav);
+  color: var(--color-lable);
 }
 .btn-pay {
   color: #0c1011;
@@ -480,11 +491,11 @@ body {
 /* end Services */
 /* start login page////// */
 .tab-content{
-  background: #F6E5F6;
+  background: var(--bg-fo);
   padding: 20px;
   border-radius: 16px;
   box-shadow: var(--bg-shdow);
-  width: auto;
+  width: 800px;
   margin: auto;
 }
 .taps-form {
@@ -620,6 +631,9 @@ body {
     cursor: pointer;
     border: none;
 }
+.tab-content{
+  width: auto;
+}
 .password-container {
   position: relative;
   width: 262px;
@@ -664,4 +678,38 @@ body {
   }
 }
 /* end footer//// */
-/* media screen/// */
+/* start tranfer page//// */
+.box_transfer{
+  background: var(--bg-fo);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--bg-shdow);
+  width: 772px;
+  margin: auto;
+}
+.form-selects{
+  width: 442px;
+  height: 48px;
+  border: 1px solid #CDB2CD;
+  border-radius: 8px;
+ background-color: #FFF4EA1A;
+ 
+}
+.trasn{
+  padding: 60px 0;
+}
+@media (max-width:477px) {
+  .form-selects {
+    width: 298px;
+   ;
+}
+.tab-content{
+  width: 345px !important;
+}
+.box_transfer {
+  
+  width: 335px !important;
+ 
+}
+}
+/* end tranfer page//// */
