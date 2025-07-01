@@ -701,13 +701,13 @@ body {
 .form-selects::placeholder{
   color: var(--color-lable) ;
 }
-.form-selects:optional{
+/* .form-selects:optional{
   color: var(--color-lable) ;
-}
+} */
 @media (max-width:477px) {
   .form-selects {
     width: 298px;
-   ;
+    
 }
 .tab-content{
   width: 345px !important;
@@ -718,5 +718,48 @@ body {
   width: 335px !important;
  
 }
+.box-search-address input ,.box-dataAddress{
+  width: 288px !important;
+}
 }
 /* end tranfer page//// */
+/* start address book///// */
+.box-search-address input{
+  width: 558px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #CDB2CD;
+  background: var(--bg-fo);
+  margin: auto;
+  /* color: var(--color-lable); */
+}
+
+.box-dataAddress{
+  width: 558px;
+  height: 68px;
+  border-radius: 16px;
+  background: var(--bg-fo);
+  box-shadow: var(--bg-shdow);
+padding: 20px;
+  margin: auto;
+}
+#searchIcon{
+  position: absolute;
+  top: 18px;
+  right: 29%;
+  opacity: 1;
+  
+}
+.boxsa::placeholder{
+  text-align: center;
+}
+.img-user{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ background-color: #ffff;
+}
+.iconeidt , .icondelet{
+  cursor: pointer;
+}
+/* end address book///// */

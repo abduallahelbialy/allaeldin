@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> address book</title>
+</head>
+
+<body>
+    <!-- //start nav// -->
+    <nav class="navbar navbar-expand-md mt-3">
+        <div class="container">
+            <div class="navbar-a">
+                <a class="navbar-brand fw-bold" href="/index_en.html">
+                    <img src="assets/logo.png" alt="logo" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/index_en.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/order-history">Transaction Log</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/statement">Financial Statement </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/AddressBook_en.html">Address Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/transfer_en.html"> Transfer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/transferrequest_en.html">Balance Request</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login_en.html">Log Out </a>
+                        </li>
+                    </ul>
+
+                    <a href="/AddressBook.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                        <i class="fa-solid fa-globe lang"></i>
+                    </a>
+                    <div class="theme-toggle ">
+                        <button id="darkModeTogglephone">
+                            <span class="light-icon">☀</span>
+                            <span class="dark-icon">🌙</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasMenu"
+            aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <a href="#" class="data-users d-flex flex-column align-items-center ">
+                        <span>عبدالله احمد غازى</span>
+                        <span>01028924906</span>
+                    </a>
+                    <li class="nav-item-a">
+                        <a class="nav-link active" href="/index_.html">Home</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/order-history">Transaction Log</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/statement">Financial Statement</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link active" href="/AddressBook_en.html"> Address Book</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link " href="/transfer_en.html"> Transfer</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link " href="/transferrequest_en.html">Balance Request</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/login_en.html">Log Out</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <a href="/AddressBook.html" class="d-flex gap-2 align-items-center text-decoration-none language ">
+                        <span class="fw-semibold text-black">EN</span>
+                        <img src="assets/circle-flags_us.png" alt="">
+                    </a>
+                    <div class="theme-toggle mb-3 ">
+                        <button id="darkModeToggle" class=" position-relative">
+                            <span class="light-icon">☀</span>
+                            <span class="dark-icon">🌙</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- //end nav// -->
+
+    <!-- start service//  -->
+    <section class="trasn">
+        <div class="container">
+            <div class="row">
+                <div class="box-search-address position-relative mb-4">
+                    <input type="text" class="form-control boxsa" id="searchInput" placeholder="Search here...">
+                    <i class="fas fa-search" id="searchIcon"></i>
+                </div>
+                <div class="mb-3 d-flex justify-content-center">
+
+                    <button type="submit" class="btn-login w-auto text-decoration-none text-center" id="toggleFormBtn">
+                        Add a new address
+                    </button>
+                </div>
+                <!-- ///form address/// -->
+                <div class="box_transfer d-flex justify-content-center align-items-center flex-column py-5 px-0 d-none"
+                    id="addressForm">
+                    <form action="#">
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">Name</label>
+                            <input type="text" class="form-control form-selects" id="exampleFormControlInput1">
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label fw-bold textlabel"> Phone number
+
+                            </label>
+                            <input type="tel" class="form-control form-selects text-end" id="exampleFormControlInput2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label fw-bold textlabel">Selling price
+
+                            </label>
+                            <input type="tel" class="form-control form-selects text-end " id="exampleFormControlInput2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput4" class="form-label fw-bold textlabel">
+                                Service
+                            </label>
+                            <input type="text" class="form-control form-selects text-end" id="exampleFormControlInput4">
+                        </div>
+                        <div class="mt-3">
+
+                            <button type="button" class="btn-login w-100 px-5 text-decoration-none text-center"
+                                id="toggleFormBtn2">
+                                Add a new address
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- ///form address/// -->
+                <div class="d-flex justify-content-between align-items-center flex-column d-none" id="addressdata">
+
+                    <div class="box-dataAddress mt-4 mb-2 d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="img-user">
+                            </div>
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span>Mohamed Mohammed</span>
+                                <span>0123456789</span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="icondelet">
+                                <img src="assets/icondelet.png" alt="icondelet" class="img-fluid">
+
+                            </div>
+                            <div class="iconeidt">
+                                <img src="assets/iconeidt.png" alt="iconeidt" class="img-fluid">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-dataAddress mt-4 mb-4 d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="img-user">
+                            </div>
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span>Mohamed Mohammed</span>
+                                <span>0123456789</span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="icondelet">
+                                <img src="assets/icondelet.png" alt="icondelet" class="img-fluid">
+
+                            </div>
+                            <div class="iconeidt">
+                                <img src="assets/iconeidt.png" alt="iconeidt" class="img-fluid">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end service//  -->
+<!-- start footer//// -->
+<footer class="py-2 px-0">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <img src="assets/logofooter.png" alt="logo" class="img-fluid logo-footer">
+                </div>
+                <div>
+                    <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                        <li class="link-footer"> <a href="#" class="text-decoration-none ">Contact Us</a></li>
+                        <li class="link-footer"> <a href="#" class="text-decoration-none "> Privacy Policy</a> </li>
+                        <li class="link-footer"> <a href="#" class="text-decoration-none "> Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="groupicon d-flex gap-3 align-items-center">
+                    <a href="#">
+                        <img src="assets/facebook.png" alt=" facebook" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="assets/whatUp.png" alt=" whatUp" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="assets/Social Media Icons Circle.png" alt=" instagram" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="assets/send.png" alt=" sned" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="capy text-center"> © 2025 All rights </div>
+
+        </div>
+    </div>
+</footer>
+<!-- end footer//// -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("toggleFormBtn").addEventListener("click", function () {
+            const form = document.getElementById("addressForm");
+            form.classList.toggle("d-none");
+        });
+    </script>
+    <script>
+        document.getElementById("toggleFormBtn2").addEventListener("click", function () {
+            const form = document.getElementById("addressdata");
+            form.classList.toggle("d-none");
+        });
+    </script>
+
+
+</body>
+
+</html>
