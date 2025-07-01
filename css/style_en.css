@@ -385,7 +385,7 @@ body {
   font-size: 22px;
 }
 .textlabel {
-  color: var(--color-mod);
+  color: var(--color-nav);
 }
 .btn-pay {
   color: #0c1011;
@@ -499,6 +499,14 @@ body {
   -o-border-radius: 8px;
   cursor: pointer;
   border: none;
+}
+.tab-content{
+  background: #F6E5F6;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--bg-shdow);
+  width: auto;
+  margin: auto;
 }
 .btn-submit2{
   color: #0c1011;
