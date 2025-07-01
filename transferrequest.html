@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>تحويل رصيد</title>
+    <title> طلب رصيد</title>
 </head>
 
 <body>
@@ -39,17 +39,17 @@
                             <a class="nav-link" href="/address-book">دفتر العناوين</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/transfer.html">تحويل رصيد</a>
+                            <a class="nav-link " href="/transfer.html">تحويل رصيد</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/transferrequest.html">طلب رصيد</a>
+                            <a class="nav-link active" href="/transfer-request">طلب رصيد</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/login.html">تسجيل الخروج</a>
                         </li>
                     </ul>
 
-                    <a href="/transfer_en.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                    <a href="/transferrequest_en.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
                         <i class="fa-solid fa-globe lang"></i>
                     </a>
                     <div class="theme-toggle ">
@@ -86,10 +86,10 @@
                         <a class="nav-link" href="/address-book">دفتر العناوين</a>
                     </li>
                     <li class="nav-item-a">
-                        <a class="nav-link active" href="/transfer.html">تحويل رصيد</a>
+                        <a class="nav-link " href="/transfer.html">تحويل رصيد</a>
                     </li>
                     <li class="nav-item-a">
-                        <a class="nav-link" href="/transferrequest.htmlt">طلب رصيد</a>
+                        <a class="nav-link active" href="/transfer-request">طلب رصيد</a>
                     </li>
                     <li class="nav-item-a">
                         <a class="nav-link" href="/login.html">تسجيل الخروج</a>
@@ -97,7 +97,7 @@
                 </ul>
                 <div class="d-flex justify-content-between align-items-center">
 
-                    <a href="/transfer_en.html" class="d-flex gap-2 align-items-center text-decoration-none language ">
+                    <a href="/transferrequest_en.html" class="d-flex gap-2 align-items-center text-decoration-none language ">
                         <span class="fw-semibold text-black">EN</span>
                         <img src="assets/circle-flags_us.png" alt="">
                     </a>
@@ -119,8 +119,8 @@
             <div class="row">
                 <div class="box_transfer d-flex justify-content-center align-items-center flex-column py-5 px-0">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">اختر المحفظة</label>
-                        <br/>
+                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">طريقة الدفع</label>
+                        <br />
                         <select class="form-selects m-auto" aria-label="Default select example">
                             <option selected>فيدفون</option>
                             <option value="1">One</option>
@@ -129,25 +129,36 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label fw-bold textlabel ">رقم الهاتف</label>
-                        <input type="tel" class="form-control form-selects" id="exampleFormControlInput2">
+                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">اختر المحفظة</label>
+                        <br />
+                        <select class="form-selects m-auto" aria-label="Default select example">
+                            <option selected>فيدفون</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
+                   
                     <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label fw-bold textlabel ">المبلغ</label>
-                        <input type="tel" class="form-control form-selects" id="exampleFormControlInput2">
+                        <label for="exampleFormControlInput2" class="form-label fw-bold textlabel ">قيمة الرصيد المطلوب</label>
+                        <input type="tel" class="form-control form-selects text-end " placeholder="1,000,000,000.00" id="exampleFormControlInput2">
                     </div>
+                    <div class="text-center fs-6">المبلغ المتوقع استلامه 1,000,000,000.00</div>
+                    <p class="text-center fs-6">هذه الخدمة تقوم باضافة لرصيد مباشرة بمجرد نجاح عملية الدفع</p>
                     <div class="mt-3">
-                    
-                        <button type="button" class="btn-login  w-100 px-5 text-decoration-none text-center" data-bs-toggle="modal"
-                        data-bs-target="#purchaseModal2">
+
+                        <button type="button" class="btn-login  w-100 px-5 text-decoration-none text-center"
+                            data-bs-toggle="modal" data-bs-target="#purchaseModal2">
                             اطلب
                         </button>
                     </div>
-                    <div class="modal fade" id="purchaseModal2" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="purchaseModal2" tabindex="-1" aria-labelledby="purchaseModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body text-center">
                                     <div class="mb-3">
@@ -157,9 +168,9 @@
 
                                         <h4 class="fw-bold textpay">عفوا....لوريم ايسوم</h4>
                                     </div>
-                    
+
                                 </div>
-                    
+
                             </div>
                         </div>
                     </div>

@@ -698,6 +698,12 @@ body {
 .trasn{
   padding: 60px 0;
 }
+.form-selects::placeholder{
+  color: var(--color-lable) ;
+}
+.form-selects:optional{
+  color: var(--color-lable) ;
+}
 @media (max-width:477px) {
   .form-selects {
     width: 298px;
