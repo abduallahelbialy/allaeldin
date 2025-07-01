@@ -705,9 +705,10 @@ body {
 }
 .tab-content{
   width: 345px !important;
+  margin: auto;
 }
 .box_transfer {
-  
+  margin: auto;
   width: 335px !important;
  
 }
