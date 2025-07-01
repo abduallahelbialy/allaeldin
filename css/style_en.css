@@ -544,7 +544,7 @@ body {
     color: #0c1011;
     background: var(--activ-tab);
     box-shadow: var(--bg-shdow);
-    width: 255px;
+    width: 255px !important;
     padding: 15px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -556,11 +556,11 @@ body {
 }
 .password-container {
   position: relative;
-  width: 323px;
+  width: 262px !important;
   margin: auto;
 }
 .phone {
-  width: 268px;
+  width: 268px !important;
   height: 48px;
   text-align: end;
   border-radius: 8px;

@@ -101,13 +101,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-5 password-container">
-                        <input type="password" class="form-control m-auto" name="password" placeholder="********"
-                            id="password">
-                        <span class="toggle-password" onclick="togglePassword()">
-                            👁️
-                        </span>
-                    </div>
+                        <div class=" mb-5 password-container">
+                            <input type="password" class="form-control newpas m-auto" id="newPassword">
+                            <i class="fas fa-eye toggle-password" id="toggleNewPassword"></i>
+                        </div>
 
                     <div class="mt-3">
 
@@ -174,6 +171,31 @@
                 const el = document.getElementById(target);
                 if (el) el.classList.remove("d-none");
             });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('toggleNewPassword').addEventListener('click', function () {
+                togglePassword('newPassword', this);
+            });
+
+            document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
+                togglePassword('confirmPassword', this);
+            });
+
+            function togglePassword(inputId, icon) {
+                const passwordInput = document.getElementById(inputId);
+
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            }
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
