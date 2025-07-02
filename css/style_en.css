@@ -494,7 +494,7 @@ body {
   text-decoration: underline;
   font-size: 20px;
 }
-/* .iti--separate-dial-code .iti__selected-flag {
+.iti--separate-dial-code .iti__selected-flag {
   background: transparent !important;
 position: relative;
 }
@@ -506,7 +506,7 @@ position: relative;
   right: 0;
   width: 2px;
   background-color: #CDB2CD;
-} */
+}
 .center-content {
   min-height: 80vh;
   display: flex;

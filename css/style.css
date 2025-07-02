@@ -378,7 +378,7 @@ body {
   gap: 1rem;
 }
 
-/* .iti--separate-dial-code .iti__selected-flag {
+.iti--separate-dial-code .iti__selected-flag {
   background: transparent !important;
 position: relative;
 }
@@ -390,7 +390,7 @@ position: relative;
   right: 0;
   width: 2px;
   background-color: #CDB2CD;
-} */
+}
 .box-ser1 {
   background-color: var(--bg-ser1);
   border: 1px solid var(--borr);
