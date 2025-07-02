@@ -508,11 +508,14 @@ position: relative;
   background-color: #CDB2CD;
 }
 .center-content {
-  min-height: 80vh;
+  /* min-height: 80vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 60px 0;
+  margin: 40px 0;
+  
 }
 .opt label {
   display: block;

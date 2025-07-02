@@ -548,6 +548,14 @@ position: relative;
   width: fit-content;
   margin: auto;
 }
+/* .box-contact{
+  background: var(--bg-fo);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--bg-shdow);
+  width: fit-content;
+  margin: auto;
+} */
 .taps-form  {
   color: #566668;
   cursor: pointer;
