@@ -9,6 +9,8 @@
 :root {
   --color-nav: #1f5b61;
   --color-mod: #1f5b61;
+  --color-footer:#131313;
+
   --color-text: #4f4f4f;
   --bg-nav: linear-gradient(to right, #decdde, #eedbee);
   --bg-btn: linear-gradient(to left, #f0ddf0, #d9cdd9);
@@ -33,6 +35,7 @@
 [data-theme="dark"] {
   --bg-mod: #3b3b3b;
   --color-mod: #f6f6f6;
+  --color-footer:#000;
 
   --color-nav: #a8a8a8;
   --bg-nav: linear-gradient(to right, #3c3d3e, #3c3d3e);
@@ -138,6 +141,10 @@ body {
   transition: all 0.3s ease-in-out;
   font-size: 15px;
 }
+.navbar-nav .nav-item-a a{
+  color: var(--color-nav);
+
+}
 .active {
   color: var(--color-active) !important;
   font-weight: bold;
@@ -153,10 +160,12 @@ body {
   border-radius: 8px;
   color: var(--text-blance) !important;
 }
-
+.spial{
+  margin-right: 2.4rem !important;
+}
 .dropdown-menu {
   background: var(--bg-btn);
-  width: 206px;
+  width: 219px;
   border: 1px solid #be9fbe;
   border-radius: 8px;
   margin: 10px 0;
@@ -193,6 +202,9 @@ body {
     transition: all 0.3s ease-in-out;
     font-size: 9px;
   }
+  .numes{
+    width: 377px !important;
+  }
   .tab-content{
     width: 500px !important;
   }
@@ -213,6 +225,12 @@ body {
     border-radius: 24px;
     transition: all 0.3s ease-in-out;
     font-size: 9px !important;
+  }
+  .numes{
+    width: 377px !important;
+  }
+  .pas{
+    width: 377px !important;
   }
   .tab-content{
     width: 500px !important;
@@ -295,9 +313,18 @@ body {
     outline: none;
     margin: auto;
   }
+  .pas{
+    width: 233px !important;
+  }
+  .numes{
+    width: 233px !important;
+  }
   .box-search input.expanded {
     max-width: 500px !important;
   }
+  .spial {
+    margin-right: 4.5rem !important;
+}
   .box-search {
     width: 340px;
     margin: auto;
@@ -305,6 +332,13 @@ body {
   .tabs {
     display: none !important;
   }
+  .btn-trans{
+    width: 86px !important;
+  }
+  .dropdown-menu {
+    left: -61px !important;
+    margin-top: var(--bs-dropdown-spacer);
+}
 }
 /* end header//// */
 
@@ -439,17 +473,21 @@ body {
 }
 /* end Services */
 /* start login page////// */
-.taps-form li{
-  /* color: #566668; */
+.taps-form  {
+  color: #566668;
   cursor: pointer;
 }
+
+.taps-form a:not(.active-tab-form) {
+  color: #566668; 
+}
 .active-tab-form {
-  color: #1F5B61;
+  color: var(--color-mod);
   text-decoration: underline;
   font-size: 20px;
 }
 .center-content {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -479,14 +517,14 @@ body {
   transition: border-color 0.3s;
 }
 .numes{
-  width: 268px;
+  width: 233px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
   background-color: #F7E7F5;
 }
 .pas{
-  width: 405px;
+  width: 363px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
@@ -632,12 +670,16 @@ body {
 }
 /* ///loigin page/// */
 /* start footer//// */
+footer{
+  background-color: #EEDEEE;
+}
 .link-footer a{
   color: var(--color-footer);
   font-size: 14px;
 }
 .capy{
   margin-top: -15px;
+  color: var(--color-footer);
 }
 @media (max-width:477px) {
   .groupicon{

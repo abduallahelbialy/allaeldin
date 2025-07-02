@@ -37,7 +37,7 @@
 [data-theme="dark"] {
   --bg-mod: #3b3b3b;
   --color-mod: #f6f6f6;
-  --color-footer:#f6f6f6;
+  --color-footer:#000;
   --bg-fo:#3c3d3f;
 
   --color-nav: #a8a8a8;
@@ -141,11 +141,14 @@ body {
 }
 .navbar-nav .nav-item a {
   color: var(--color-nav);
-
   padding: 3px 20px;
   border-radius: 24px;
   transition: all 0.3s ease-in-out;
   font-size: 20px;
+}
+.navbar-nav .nav-item-a a{
+  color: var(--color-nav);
+
 }
 .active {
   color: var(--color-active) !important;
@@ -160,6 +163,7 @@ body {
   width: 100px;
   background: var(--bg-btn);
   border-radius: 8px;
+  outline: none;
   color: var(--text-blance) !important;
 }
 
@@ -202,6 +206,9 @@ body {
     transition: all 0.3s ease-in-out;
     font-size: 9px;
   }
+  .numes{
+    width: 360px !important;
+  }
   .tab-content{
     width: 500px !important;
   }
@@ -216,6 +223,9 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .numes{
+    width: 360px !important;
+  }
   .navbar-nav .nav-item a {
     color: var(--color-nav);
     padding: 3px 10px;
@@ -307,6 +317,9 @@ body {
   .box-search input.expanded {
     max-width: 500px !important;
   }
+  .numes{
+    width: 233px !important;
+  }
   .box-search {
     width: 340px;
     margin: auto;
@@ -314,10 +327,19 @@ body {
   .tabs {
     display: none !important;
   }
+  .btn-trans{
+    width: 86px !important;
+  }
+  .spial {
+    margin-right: 4.5rem !important;
+}
 }
 /* end header//// */
 
 /* start Services */
+.spial{
+  margin-right: 2.4rem !important;
+}
 .tabs {
   border: 1px solid var(--bor-ser);
   padding: 2px;
@@ -498,17 +520,23 @@ body {
   width: 800px;
   margin: auto;
 }
-.taps-form {
+.taps-form  {
   color: #566668;
   cursor: pointer;
 }
+
+.taps-form a:not(.active-tab-form) {
+  color: #566668; 
+}
+
 .active-tab-form {
-  color: var( --color-mod);
+  color: var(--color-mod);
   text-decoration: underline;
   font-size: 20px;
 }
+
 .center-content {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -544,14 +572,14 @@ body {
 }
 
 .numes{
-  width: 268px;
+  width: 233px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
   background-color: #F7E7F5;
 }
 .pas{
-  width: 405px;
+  width: 363px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
@@ -615,7 +643,7 @@ body {
 }
 @media (max-width:477px) {
   .pas{
-    width: 268px;
+    width: 233px;
   }
   .btn-login , .btn-pay ,.btn-submit ,.btn-submit2{
     color: #0c1011;
@@ -652,12 +680,16 @@ body {
 
 /* end login page////// */
 /* start footer//// */
+footer{
+  background-color: #EEDEEE;
+}
 .link-footer a{
   color: var(--color-footer);
   font-size: 14px;
 }
 .capy{
   margin-top: -15px;
+  color: var(--color-footer);
 }
 @media (max-width:477px) {
   .groupicon{
@@ -676,6 +708,13 @@ body {
     margin-top: -18px;
     font-size: 12px;
   }
+  .navbar{
+    direction: ltr;
+  }
+  .dropdown-menu {
+    left: -61px !important;
+    margin-top: var(--bs-dropdown-spacer);
+}
 }
 /* end footer//// */
 /* start tranfer page//// */
