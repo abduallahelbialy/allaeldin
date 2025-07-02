@@ -410,6 +410,11 @@ body {
   position: absolute;
   top: 188px;
 }
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem; 
+}
 .modal-content {
   position: relative;
   display: flex;

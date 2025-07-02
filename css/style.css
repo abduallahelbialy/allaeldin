@@ -372,6 +372,12 @@ body {
 .form-select-statment{
   width: 200px;
 }
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
 /* .iti--separate-dial-code .iti__selected-flag {
   background: transparent !important;
 position: relative;
@@ -674,6 +680,9 @@ select:optional{
   .pas{
     width: 233px;
   }
+  .form-grid {
+    grid-template-columns: 1fr; /* صف واحد على الموبايل */
+  }
   .btn-login , .btn-pay ,.btn-submit ,.btn-submit2{
     color: #0c1011;
     background: var(--activ-tab);
@@ -776,6 +785,9 @@ footer{
   .form-selects {
     width: 298px;
     
+}
+.form-select{
+  width: 320px !important;
 }
 .tab-content{
   width: 302px !important;
