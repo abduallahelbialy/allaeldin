@@ -315,6 +315,13 @@ body {
     outline: none;
     margin: auto;
   }
+  .form-grid {
+    grid-template-columns: 1fr; 
+    
+  }
+  .form-select{
+    width: 320px !important;
+  }
   .pas{
     width: 233px !important;
   }
