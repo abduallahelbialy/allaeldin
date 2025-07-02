@@ -453,7 +453,7 @@ body {
 }
 .hidden-box {
   display: none;
-  background-color: white;
+  background-color: #F7E7F5;
   color: var(--text-color);
   padding: 10px;
   border-radius: 8px;
@@ -462,11 +462,12 @@ body {
   width: 262px;
   height: 182px;
   position: absolute;
-  left: 56px;
-  top: 62px;
+  left: 22px;
+  top: 46px;
   z-index: 22;
   text-align: center;
 }
+
 .form-control {
   background: transparent;
   border: 1px solid var(--borr);
