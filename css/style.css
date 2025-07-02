@@ -690,9 +690,9 @@ select:optional{
   .pas{
     width: 233px;
   }
-  .form-grid {
+  /* .form-grid {
     grid-template-columns: 1fr; /* صف واحد على الموبايل */
-  }
+  } */
   .btn-login , .btn-pay ,.btn-submit ,.btn-submit2{
     color: #0c1011;
     background: var(--activ-tab);
@@ -796,9 +796,9 @@ footer{
     width: 298px;
     
 }
-.form-select{
+/* .form-select{
   width: 320px !important;
-}
+} */
 .tab-content{
   width: 302px !important;
   margin: auto;
