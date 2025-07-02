@@ -285,6 +285,12 @@ body {
   transition: opacity 0.3s ease;
   color: #777;
 }
+.fomr-p{
+  background: transparent;
+  border: 1px solid var(--borr);
+  border-radius: 8px;
+  width: 188px;
+}
 .data-users {
   border: 1px solid #d8b5d8;
   background: var(--bg-input);
@@ -305,6 +311,9 @@ body {
   display: none !important;
 }
 @media (max-width: 477px) {
+  .sel-phone{
+    display: flex !important;
+  }
   .box-search input {
     border: 1px solid #d8b5d8;
     background: var(--bg-input);
@@ -319,8 +328,7 @@ body {
     margin: auto;
   }
   .form-grid {
-    grid-template-columns: 1fr; 
-    
+    grid-template-columns: 1fr !important; 
   }
   .form-select{
     width: 320px !important;
@@ -330,7 +338,7 @@ body {
     height: 38px;
   }
   .hidd{
-    display: none;
+    display: none !important;
   }
   .pas{
     width: 233px !important;
