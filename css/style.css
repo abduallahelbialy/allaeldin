@@ -35,10 +35,12 @@
   --borr: #cdb2cd;
   --bg-mod: #eedeee;
   --selec-color:#1F5B61;
-
+--term:#0B0303;
 }
 
 [data-theme="dark"] {
+  --term:#fff;
+
   --bg-mod: #3b3b3b;
   --color-mod: #f6f6f6;
   --color-footer:#000;
@@ -843,3 +845,19 @@ padding: 20px;
   cursor: pointer;
 }
 /* end address book///// */
+/* start term//// */
+.term {
+  padding: 60px 0;
+}
+.term h2{
+  font-size: 28px;
+  color: var(--term);
+}
+.des{
+  color: var(--term);
+  line-height: 2;
+}
+.cr-red{
+  color: #9D321E;
+}
+/* end term//// */
