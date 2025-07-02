@@ -301,6 +301,9 @@ body {
   color: var(--data-color);
   text-decoration: none;
 }
+.sel-phone{
+  display: none !important;
+}
 @media (max-width: 477px) {
   .box-search input {
     border: 1px solid #d8b5d8;
@@ -321,6 +324,13 @@ body {
   }
   .form-select{
     width: 320px !important;
+  }
+  .fomr-p{
+    width: 247px !important;
+    height: 38px;
+  }
+  .hidd{
+    display: none;
   }
   .pas{
     width: 233px !important;

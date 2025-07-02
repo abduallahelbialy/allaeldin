@@ -538,6 +538,12 @@ position: relative;
   border-radius: 8px;
   width: 188px;
 }
+.fomr-p{
+  background: transparent;
+  border: 1px solid var(--borr);
+  border-radius: 8px;
+  width: 188px;
+}
 /* end Services */
 /* start login page////// */
 .tab-content{
@@ -793,6 +799,9 @@ footer{
 .form-selects::placeholder{
   color: var(--color-lable) ;
 }
+.sel-phone{
+  display: none !important;
+}
 /* .form-selects:optional{
   color: var(--color-lable) ;
 } */
@@ -801,8 +810,18 @@ footer{
     width: 298px;
     
 }
+.sel-phone{
+  display: flex !important;
+}
 .form-select{
   width: 320px !important;
+}
+.fomr-p{
+  width: 247px !important;
+  height: 38px;
+}
+.hidd{
+  display: none;
 }
 .tab-content{
   width: 302px !important;
