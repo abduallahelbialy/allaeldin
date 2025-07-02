@@ -44,15 +44,18 @@ const currentTheme2 = localStorage.getItem("theme2");
 const input = document.getElementById("searchInput");
 const icon = document.getElementById("searchIcon");
 
-input.addEventListener("input", () => {
-  if (input.value.trim() !== "") {
-    icon.style.opacity = "0";
-    input.classList.add("expanded");
-  } else {
-    icon.style.opacity = "1";
+input.addEventListener("focus", () => {
+  input.classList.add("expanded");
+  icon.style.opacity = "0";
+});
+
+input.addEventListener("blur", () => {
+  if (input.value.trim() === "") {
     input.classList.remove("expanded");
+    icon.style.opacity = "1";
   }
 });
+
 ///search////
 
 ///tabs//

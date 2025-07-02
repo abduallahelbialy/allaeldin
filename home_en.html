@@ -21,7 +21,8 @@
                 <div class="dropdown d-block d-md-none">
                     <button class="btn btn-trans dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Blance
+                        <i class="fa-solid fa-money-check-dollar" style="color: #1F5B61;"></i>
+
                     </button>
                     <ul class="dropdown-menu">
                         <li class="d-flex justify-content-between align-items-center  dropdown-item">
@@ -50,7 +51,7 @@
                             <a class="nav-link" href="/order-history">Transaction Log</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/statement">Financial Statement</a>
+                            <a class="nav-link" href="/statement_en.html">Financial Statement</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/AddressBook_en.html">Address Book</a>
@@ -65,32 +66,36 @@
                             <a class="nav-link" href="/login_en.html">Log Out</a>
                         </li>
                     </ul>
-                    <div class="dropdown">
-                        <button class="btn btn-trans dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Balance
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li class="d-flex justify-content-between align-items-center  dropdown-item">
-                                <span><strong>100.</strong>00</span> <span>Dollar</span>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center  dropdown-item">
-                                <span><strong>10,000,000,000.</strong>00</span> <span>Syrian pounds</span>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center  dropdown-item">
-                                <span><strong>6000.</strong>00</span> <span> Euor</span>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <a href="/home.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
-                        <i class="fa-solid fa-globe lang"></i>
-                    </a>
-                    <div class="theme-toggle ">
-                        <button id="darkModeTogglephone">
-                            <span class="light-icon">☀</span>
-                            <span class="dark-icon">🌙</span>
-                        </button>
+                    <div class="d-flex align-items-center gap-2"
+                        style="border: 1px solid #BE9FBE; background-color: #EEDCEE; border-radius: 8px;">
+                        <div class="theme-toggle ">
+                            <button id="darkModeTogglephone">
+                                <span class="light-icon" style="color: #1F5B61;">☀</span>
+                                <span class="dark-icon"><img src="assets/light.png" alt=""></span>
+                            </button>
+                        </div>
+                    
+                        <a href="/home.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                            <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
+                        </a>
+                        <div class="dropdown ">
+                            <button class="btn  bg-transparent border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-money-check-dollar" style="color: #1F5B61;"></i>
+                    
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                                    <span><strong>100.</strong>00</span> <span>دولار امريكى</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                                    <span><strong>10,000,000,000.</strong>00</span> <span>ليرة سورية</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                                    <span><strong>6000.</strong>00</span> <span> يورو اوروبي</span>
+                                </li>
+                    
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,9 +103,9 @@
 
         <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasMenu"
             aria-labelledby="offcanvasMenuLabel">
-            <div class="offcanvas-header">
+            <!-- <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
-            </div>
+            </div> -->
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
                     <a href="#" class="data-users d-flex flex-column align-items-center">
@@ -114,7 +119,7 @@
                         <a class="nav-link" href="/order-history">Transaction Log</a>
                     </li>
                     <li class="nav-item-a">
-                        <a class="nav-link" href="/statement">Financial Statement</a>
+                        <a class="nav-link" href="/statement_en.html">Financial Statement</a>
                     </li>
                     <li class="nav-item-a">
                         <a class="nav-link" href="/AddressBook_en.html">Address Book</a>
@@ -130,15 +135,14 @@
                     </li>
                 </ul>
                 <div class="d-flex justify-content-between align-items-center">
-
-                    <a href="/home.html" class="d-flex gap-2 align-items-center text-decoration-none language ">
-                        <span class="fw-semibold text-black">EN</span>
-                        <img src="assets/circle-flags_us.png" alt="">
+                
+                    <a href="/home.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                        <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
                     </a>
-                    <div class="theme-toggle mb-3 ">
-                        <button id="darkModeToggle" class=" position-relative">
-                            <span class="light-icon">☀</span>
-                            <span class="dark-icon">🌙</span>
+                    <div class="theme-toggle ">
+                        <button id="darkModeToggle">
+                            <span class="light-icon" style="color: #1F5B61;">☀</span>
+                            <span class="dark-icon"><img src="assets/light.png" alt=""></span>
                         </button>
                     </div>
                 </div>
@@ -184,7 +188,7 @@
                     </ul>
                 </div>
 
-                <div class="products row">
+                <div class="products row m-auto">
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 product mb-5" data-category="programs">
                         <div class="box-ser1 position-relative" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <div class="d-flex flex-column align-items-center text-ser1">

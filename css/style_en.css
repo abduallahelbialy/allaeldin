@@ -10,8 +10,10 @@
   --color-nav: #1f5b61;
   --color-mod: #1f5b61;
   --color-footer:#131313;
-
+  --data-color:#4F4F4F;
   --color-text: #4f4f4f;
+  --bg-user:#D9C3D9;
+
   --bg-nav: linear-gradient(to right, #decdde, #eedbee);
   --bg-btn: linear-gradient(to left, #f0ddf0, #d9cdd9);
   --bg-shdow: 0 4px 10px #c8b8c8, 0 2px 5px #d5c4d5;
@@ -36,7 +38,7 @@
   --bg-mod: #3b3b3b;
   --color-mod: #f6f6f6;
   --color-footer:#000;
-
+  --data-color:#fff;
   --color-nav: #a8a8a8;
   --bg-nav: linear-gradient(to right, #3c3d3e, #3c3d3e);
   --bg-shdow: 0 4px 10px #1b1b1b, 0 2px 5px #1b1b1b;
@@ -296,7 +298,7 @@ body {
   height: 100%;
   max-width: 259px;
   padding: 10px;
-  color: var(--text-color);
+  color: var(--data-color);
   text-decoration: none;
 }
 @media (max-width: 477px) {
@@ -486,6 +488,19 @@ body {
   text-decoration: underline;
   font-size: 20px;
 }
+/* .iti--separate-dial-code .iti__selected-flag {
+  background: transparent !important;
+position: relative;
+}
+.iti--separate-dial-code .iti__selected-flag::after {
+  content: "";
+  position: absolute;
+  top: 5px; 
+  bottom: 5px;
+  right: 0;
+  width: 2px;
+  background-color: #CDB2CD;
+} */
 .center-content {
   min-height: 80vh;
   display: flex;
@@ -514,6 +529,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
+  background-color: #F7E7F5;
   transition: border-color 0.3s;
 }
 .numes{
@@ -549,7 +565,7 @@ body {
   padding: 20px;
   border-radius: 16px;
   box-shadow: var(--bg-shdow);
-  width: 800px !important;
+  width: fit-content !important;
   margin: auto;
 }
 .btn-submit2{
