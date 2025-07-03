@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>statement</title>
+    <title> Transfer History</title>
 </head>
 
 <style>
@@ -34,10 +34,10 @@
                             <a class="nav-link " href="/home_en.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/order_history_en.html">Transfer History</a>
+                            <a class="nav-link active" href="/order_history_en.html">Transfer Log</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/statement_en.html">Financial Statement</a>
+                            <a class="nav-link " href="/statement_en.html">Financial Statement</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/AddressBook_en.html">Address Book</a>
@@ -62,7 +62,7 @@
                             </button>
                         </div>
 
-                        <a href="/statement.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                        <a href="/order_history.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
                             <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
                         </a>
                         <div class="dropdown ">
@@ -92,8 +92,8 @@
         <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasMenu"
             aria-labelledby="offcanvasMenuLabel">
             <!-- <div class="offcanvas-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
-                </div> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
+                    </div> -->
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
                     <a href="/dashboard_en.html" class="data-users d-flex flex-column align-items-center ">
@@ -104,7 +104,7 @@
                         <a class="nav-link " href="/home_en.html">Home</a>
                     </li>
                     <li class="nav-item-a">
-                        <a class="nav-link" href="/order_history_en.html"> Transaction Log</a>
+                        <a class="nav-link active" href="/order_history_en.html"> Transaction Log</a>
                     </li>
                     <li class="nav-item-a">
                         <a class="nav-link" href="/statement_en.html">Financial Statement</a>
@@ -113,7 +113,7 @@
                         <a class="nav-link" href="/AddressBook_en.html">Address Book</a>
                     </li>
                     <li class="nav-item-a">
-                        <a class="nav-link active" href="/transfer_en.html"> Transfer</a>
+                        <a class="nav-link " href="/transfer_en.html"> Transfer</a>
                     </li>
                     <li class="nav-item-a">
                         <a class="nav-link" href="/transferrequest_en.html">Balance Request</a>
@@ -124,7 +124,7 @@
                 </ul>
                 <div class="d-flex justify-content-between align-items-center">
 
-                    <a href="/statement.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                    <a href="/order_history.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
                         <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
                     </a>
                     <div class="theme-toggle ">
@@ -143,82 +143,168 @@
     <section class="trasn">
         <div class="container">
             <div class="row">
-                <div class="filter-container">
+                <div class="filter-container mb-4">
                     <div class="filter-item d-flex flex-column align-items-start">
-                        <label for="start-date" class="label-statment">Start Date</label>
+                        <label for="trans-type" class="label-statment">Enter data</label>
+
+                        <input type="text" class="statems-inputs" id="trans-type" />
+
+
+                    </div>
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="start-date" class="label-statment">Start date</label>
 
                         <select id="start-date" class="statems-inputs">
                             <option value="">2024-06-24</option>
                         </select>
                     </div>
                     <div class="filter-item d-flex flex-column align-items-start">
-                        <label for="end-date" class="label-statment"> End Date</label>
+                        <label for="end-date" class="label-statment">End date</label>
 
                         <select class="statems-inputs" id="end-date">
                             <option value="">2024-06-24</option>
                         </select>
                     </div>
+
                     <div class="filter-item d-flex flex-column align-items-start">
-                        <label for="transition" class="label-statment">Transition type</label>
-                        <select class="statems-inputs" id="trans-type">
-                            <option value="">Transition type</option>
-                        </select>
-                    </div>
-                    <div class="filter-item d-flex flex-column align-items-start">
-                        <label for="transaction-type" class="label-statment"> Service</label>
+                        <label for="transaction-type" class="label-statment">Status</label>
 
                         <select class="statems-inputs" id="transaction-type">
-                            <option>Service</option>
+                            <option>Status</option>
                         </select>
                     </div>
                     <div class="filter-item d-flex flex-column align-items-start">
-                        <label for="count-rows" class="label-statment">Number rows</label>
+                        <label for="count-rows" class="label-statment">Number of lines</label>
+
                         <select class="statems-inputs" id="count-rows">
-                            <option>Number rows</option>
+                            <option>Number of rows</option>
                         </select>
                     </div>
-                    <div class="filter-item ">
+                    <div class="filter-item">
                         <input type="submit" value="Search" class="statems-btn">
                     </div>
                 </div>
 
                 <div class="table-wrapper">
-                    <div class="no-records">No financial records</div>
 
                     <table>
                         <thead>
                             <tr>
-                                <th>Date</th>
-                                <th> Amount</th>
-                                <th>Balance after movement</th>
-                                <th>Service</th>
-                                <th> Transition type</th>
+                                <th>Order Number</th>
+                                <th>Purchase Date</th>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Customer</th>
+                                <th>Result</th>
+                                <th>Status</th>
+                                <th>Total Price</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="Date">24/10/2025<br>9:12:18</td>
-                                <td data-label="Amount " class="negative">-17,000</td>
-                                <td data-label="Balance after ">1,000,000,000</td>
-                                <td data-label="service" class="service-info">
-                                    100 diamond<br>freefire<br>by ID
-                                </td>
-                                <td data-label=" Transition type"> rejection operation</td>
+                                <td data-label="Order Number">19082</td>
+                                <td data-label="Purchase Date">10/24/2025<br>9:12:18</td>
+                                <td data-label="Product Name">100 Diamonds<br>Freefire<br>by ID</td>
+                                <td data-label="Quantity">1</td>
+                                <td data-label="Customer">Player ID<br /> 123456789</td>
+                                <td data-label="Result">Purchase Failed<br />
+                                    The ID may be<br /> wrong</td>
+                                <td data-label="Status" class="positive">Completed</td>
+                                <td data-label="Total Price">1,000,000,000</td>
+
                             </tr>
                             <tr>
-                                <td data-label="Date">24/10/2025<br>9:12:18</td>
-                                <td data-label="Amount " class="positive">+17,000</td>
-                                <td data-label="Balance after ">1,000,000,000</td>
-                                <td data-label="service" class="service-info">
-                                    100 diamond<br>freefire<br>by ID
-                                </td>
-                                <td data-label=" Transition type ">رفض العملية</td>
+                                <td data-label="Number Order">19082</td>
+                                <td data-label=" Purchase Date">10/24/2025<br>9:12:18</td>
+                                <td data-label=" Product Name">100 Diamonds<br>Freefire<br>by ID</td>
+                                <td data-label=" Quantity">1</td>
+                                <td data-label=" Customer">Player ID<br />123456789</td>
+                                <td data-label=" Result">Purchase Failed<br />
+                                    The ID may be<br />incorrect</td>
+                                <td data-label=" Status " class="negative">Rejected</td>
+                                <td data-label=" Total Price">1,000,000,000</td>
                             </tr>
+                            <tr>
+                                <td data-label=" Order Number">19082</td>
+                                <td data-label="Purchase Date">10/24/2025<br>9:12:18</td>
+                                <td data-label="Product Name">100 Diamonds<br>Freefire<br>by ID</td>
+                                <td data-label="Quantity">1</td>
+                                <td data-label="Customer">Player ID<br />123456789</td>
+                                <td data-label="Result">Purchase Failed<br />
+                                    The ID may be<br />incorrect</td>
+                                <td data-label="Status" class="bluetable">Working</td>
+                                <td data-label="Total Price">1,000,000,000</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Order Number">19082</td>
+                                <td data-label="Purchase Date">10/24/2025<br>9:12:18</td>
+                                <td data-label="Product Name">100 Diamonds<br>Freefire<br>by ID</td>
+                                <td data-label="Quantity">1</td>
+                                <td data-label="Customer">Player ID<br /> 123456789</td>
+                                <td data-label="Result">Purchase Failed<br />
+                                    The ID may be<br />incorrect</td>
+                                <td data-label="Status" class="ordernow">Processing</td>
+                                <td data-label="Total Price">1,000,000,000</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Number Order">19082</td>
+                                <td data-label=" Purchase Date">10/24/2025<br>9:12:18</td>
+                                <td data-label=" Product Name">100 Diamonds<br>Freefire<br>by ID</td>
+                                <td data-label=" Quantity">1</td>
+                                <td data-label=" Customer">Player ID<br />123456789</td>
+                                <td data-label=" Result">Purchase Failed<br />
+                                    The ID may be<br />incorrect</td>
+                                <td data-label=" Status " class="positive">Completed</td>
+                                <td data-label=" Total Price">1,000,000,000</td>
+
+                            </tr>
+                            <tr>
+                                <td data-label=" Order Number">19082</td>
+                                <td data-label="Purchase Date">10/24/2025<br>9:12:18</td>
+                                <td data-label="Product Name">100 Diamonds<br>Freefire<br>by ID</td>
+                                <td data-label="Quantity">1</td>
+                                <td data-label="Customer">Player ID<br />123456789</td>
+                                <td data-label="Result">Purchase Failed<br />
+                                    The ID may be<br />incorrect</td>
+                                <td data-label="Status" class="positive">Completed</td>
+                                <td data-label="Total Price">1,000,000,000</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Order Number">19082</td>
+                                <td data-label="Purchase Date">10/24/2025<br>9:12:18</td>
+                                <td data-label="Product Name">100 Diamonds<br>Freefire<br>by ID</td>
+                                <td data-label="Quantity">1</td>
+                                <td data-label="Customer">Player ID<br /> 123456789</td>
+                                <td data-label="Result">Purchase Failed<br />
+                                    The ID may be<br /> wrong</td>
+                                <td data-label="Status" class="positive">Completed</td>
+                                <td data-label="Total Price">1,000,000,000</td>
+                            </tr>
+
                         </tbody>
                     </table>
 
 
                 </div>
+                <div class="pagination d-flex justify-content-center mt-5">
+                    <ul
+                        class="list-unstyled d-flex gap-3 justify-content-center align-items-center text-center m-0 p-0">
+                        <li><i class="fa-solid fa-chevron-right"></i></li>
+                        <li><i class="fa-solid fa-chevron-right"></i></li>
+
+                        <li>30</li>
+                        <li>20</li>
+                        <li>15</li>
+                        <li>...</li>
+                        <li>3</li>
+                        <li class="active-pag">2</li>
+                        <li>1</li>
+
+                        <li><i class="fa-solid fa-chevron-left"></i></li>
+                        <li><i class="fa-solid fa-chevron-left"></i></li>
+                    </ul>
+                </div>
+
             </div>
     </section>
     <!-- end service//  -->

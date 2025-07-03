@@ -1095,6 +1095,10 @@ font-weight: 800;
 .form-dashboard {
   width: 259px;
 }
+.box-dashboard2 {
+  width: 324px !important;
+  
+}
 }
 @media (max-width:799px) {
   .box-dasboard {
@@ -1174,6 +1178,25 @@ font-weight: 800;
 background: var(--bg-mod);
 outline: none;
 color: var(--color-lable);
+}
+.bluetable{
+  color: #1428A6;
+}
+.ordernow{
+  color: #038A6A;
+}
+.active-pag{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #F7EBDB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.pagination li ,i{
+  cursor: pointer;
 }
 .statems-inputs option{
   color: var(--color-lable);

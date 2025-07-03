@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>البيان المالي</title>
+    <title> سجل التحويل</title>
 </head>
 
 <style>
-  
+
 </style>
-  
+
 <body>
     <!-- //start nav// -->
     <nav class="navbar navbar-expand-md mt-3">
@@ -34,10 +34,10 @@
                             <a class="nav-link " href="/home.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/order_history.html">سجل التحويل</a>
+                            <a class="nav-link active" href="/order_history.html">سجل التحويل</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/statement.html">البيان المالي</a>
+                            <a class="nav-link " href="/statement.html">البيان المالي</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/AddressBook.html">دفتر العناوين</a>
@@ -62,7 +62,8 @@
                             </button>
                         </div>
 
-                        <a href="/statement_en.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                        <a href="/order_history_en.html"
+                            class="d-flex gap-2 align-items-center text-decoration-none mx-2">
                             <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
                         </a>
                         <div class="dropdown ">
@@ -104,10 +105,10 @@
                         <a class="nav-link " href="/home.html">الرئيسية</a>
                     </li>
                     <li class="nav-item-a">
-                        <a class="nav-link" href="/order_history.html">سجل التحويل</a>
+                        <a class="nav-link active" href="/order_history.html">سجل التحويل</a>
                     </li>
                     <li class="nav-item-a">
-                        <a class="nav-link active" href="/statement.html">البيان المالي</a>
+                        <a class="nav-link " href="/statement.html">البيان المالي</a>
                     </li>
                     <li class="nav-item-a">
                         <a class="nav-link" href="/AddressBook.html">دفتر العناوين</a>
@@ -124,7 +125,7 @@
                 </ul>
                 <div class="d-flex justify-content-between align-items-center">
 
-                    <a href="/statement_en.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                    <a href="/order_history_en.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
                         <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
                     </a>
                     <div class="theme-toggle ">
@@ -143,84 +144,170 @@
     <section class="trasn">
         <div class="container">
             <div class="row">
-                <div class="filter-container">
+                <div class="filter-container mb-4">
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="trans-type" class="label-statment"> ادخل البيانات</label>
+
+                        <input type="text" class="statems-inputs" id="trans-type" />
+
+
+                    </div>
                     <div class="filter-item d-flex flex-column align-items-start">
                         <label for="start-date" class="label-statment">تاريخ البداية</label>
-                       
+
                         <select id="start-date" class="statems-inputs">
                             <option value="">2024-06-24</option>
                         </select>
                     </div>
-                    <div  class="filter-item d-flex flex-column align-items-start">
+                    <div class="filter-item d-flex flex-column align-items-start">
                         <label for="end-date" class="label-statment">تاريخ النهاية</label>
 
-                        <select  class="statems-inputs" id="end-date">
+                        <select class="statems-inputs" id="end-date">
                             <option value="">2024-06-24</option>
-                        </select> 
-                    </div>
-                    <div  class="filter-item d-flex flex-column align-items-start">
-                        <label for="trans-type" class="label-statment"> نوع الحركة</label>
-
-                        <select class="statems-inputs" id="trans-type">
-                            <option value="">نوع الحركة</option>
                         </select>
                     </div>
-                    <div  class="filter-item d-flex flex-column align-items-start">
-                        <label for="transaction-type" class="label-statment"> الخدمة</label>
+
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="transaction-type" class="label-statment"> الحالة</label>
 
                         <select class="statems-inputs" id="transaction-type">
-                            <option>الخدمة</option>
+                            <option>الحالة</option>
                         </select>
                     </div>
-                    <div  class="filter-item d-flex flex-column align-items-start">
+                    <div class="filter-item d-flex flex-column align-items-start">
                         <label for="count-rows" class="label-statment"> عدد الأسطر</label>
 
                         <select class="statems-inputs" id="count-rows">
                             <option>عدد الأسطر</option>
                         </select>
                     </div>
-                    <div  class="filter-item ">
-                       <input type="submit" value="بحث" class="statems-btn" >
+                    <div class="filter-item ">
+                        <input type="submit" value="بحث" class="statems-btn">
                     </div>
                 </div>
 
                 <div class="table-wrapper">
-                    <div class="no-records">لا توجد سجلات مالية</div>
-                
+
                     <table>
                         <thead>
                             <tr>
-                                <th>التاريخ</th>
-                                <th>مبلغ الحركة</th>
-                                <th>الرصيد بعد الحركة</th>
-                                <th>الخدمة</th>
-                                <th>نوع الحركة</th>
+                                <th>رقم الطلب</th>
+                                <th> تاريخ الشراء</th>
+                                <th>اسم المنتج</th>
+                                <th>الكمية</th>
+                                <th> العميل</th>
+                                <th> النتيجة</th>
+                                <th>الحالة</th>
+                                <th>السعر الاجمالي</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="التاريخ">24/10/2025<br>9:12:18</td>
-                                <td data-label="مبلغ الحركة" class="negative">-17,000</td>
-                                <td data-label="الرصيد بعد الحركة">1,000,000,000</td>
-                                <td data-label="الخدمة" class="service-info">
-                                    100 diamond<br>freefire<br>by ID
-                                </td>
-                                <td data-label="نوع الحركة">رفض العملية</td>
+                                <td data-label="رقم الطلب">19082</td>
+                                <td data-label=" تاريخ الشراء">24/10/2025<br>9:12:18</td>
+                                <td data-label="اسم المنتج">100 diamond<br>freefire<br>by ID</td>
+                                <td data-label=" الكمية">1</td>
+                                <td data-label=" العميل">ايدي اللاعب<br /> 123456789</td>
+                                <td data-label=" النتيجة">فشل الشراء<br />
+                                    قد يكون الايدي<br /> خاطئا</td>
+                                <td data-label="الحالة" class="positive">مكتمل</td>
+                                <td data-label=" السعر الاجمالي">1,000,000,000</td>
+
                             </tr>
                             <tr>
-                                <td data-label="التاريخ">24/10/2025<br>9:12:18</td>
-                                <td data-label="مبلغ الحركة" class="positive">+17,000</td>
-                                <td data-label="الرصيد بعد الحركة">1,000,000,000</td>
-                                <td data-label="الخدمة" class="service-info">
-                                    100 diamond<br>freefire<br>by ID
-                                </td>
-                                <td data-label="نوع الحركة">رفض العملية</td>
+                                <td data-label="رقم الطلب">19082</td>
+                                <td data-label=" تاريخ الشراء">24/10/2025<br>9:12:18</td>
+                                <td data-label="اسم المنتج">100 diamond<br>freefire<br>by ID</td>
+                                <td data-label=" الكمية">1</td>
+                                <td data-label=" العميل">ايدي اللاعب<br /> 123456789</td>
+                                <td data-label=" النتيجة">فشل الشراء<br />
+                                    قد يكون الايدي<br /> خاطئا</td>
+                                <td data-label="الحالة" class="negative">مرفوض</td>
+                                <td data-label=" السعر الاجمالي">1,000,000,000</td>
                             </tr>
-                        </tbody>          </table>
+                            <tr>
+                                <td data-label="رقم الطلب">19082</td>
+                                <td data-label=" تاريخ الشراء">24/10/2025<br>9:12:18</td>
+                                <td data-label="اسم المنتج">100 diamond<br>freefire<br>by ID</td>
+                                <td data-label=" الكمية">1</td>
+                                <td data-label=" العميل">ايدي اللاعب<br /> 123456789</td>
+                                <td data-label=" النتيجة">فشل الشراء<br />
+                                    قد يكون الايدي<br /> خاطئا</td>
+                                <td data-label="الحالة" class="bluetable">قيد العمل</td>
+                                <td data-label=" السعر الاجمالي">1,000,000,000</td>
+                            </tr>
+                            <tr>
+                                <td data-label="رقم الطلب">19082</td>
+                                <td data-label=" تاريخ الشراء">24/10/2025<br>9:12:18</td>
+                                <td data-label="اسم المنتج">100 diamond<br>freefire<br>by ID</td>
+                                <td data-label=" الكمية">1</td>
+                                <td data-label=" العميل">ايدي اللاعب<br /> 123456789</td>
+                                <td data-label=" النتيجة">فشل الشراء<br />
+                                    قد يكون الايدي<br /> خاطئا</td>
+                                <td data-label="الحالة" class="ordernow">جاري التنفيذ</td>
+                                <td data-label=" السعر الاجمالي">1,000,000,000</td>
+                            </tr>
+                            <tr>
+                                <td data-label="رقم الطلب">19082</td>
+                                <td data-label=" تاريخ الشراء">24/10/2025<br>9:12:18</td>
+                                <td data-label="اسم المنتج">100 diamond<br>freefire<br>by ID</td>
+                                <td data-label=" الكمية">1</td>
+                                <td data-label=" العميل">ايدي اللاعب<br /> 123456789</td>
+                                <td data-label=" النتيجة">فشل الشراء<br />
+                                    قد يكون الايدي<br /> خاطئا</td>
+                                <td data-label="الحالة" class="positive">مكتمل</td>
+                                <td data-label=" السعر الاجمالي">1,000,000,000</td>
+
+                            </tr>
+                            <tr>
+                                <td data-label="رقم الطلب">19082</td>
+                                <td data-label=" تاريخ الشراء">24/10/2025<br>9:12:18</td>
+                                <td data-label="اسم المنتج">100 diamond<br>freefire<br>by ID</td>
+                                <td data-label=" الكمية">1</td>
+                                <td data-label=" العميل">ايدي اللاعب<br /> 123456789</td>
+                                <td data-label=" النتيجة">فشل الشراء<br />
+                                    قد يكون الايدي<br /> خاطئا</td>
+                                <td data-label="الحالة" class="positive">مكتمل</td>
+                                <td data-label=" السعر الاجمالي">1,000,000,000</td>
+
+                            </tr>
+                            <tr>
+                                <td data-label="رقم الطلب">19082</td>
+                                <td data-label=" تاريخ الشراء">24/10/2025<br>9:12:18</td>
+                                <td data-label="اسم المنتج">100 diamond<br>freefire<br>by ID</td>
+                                <td data-label=" الكمية">1</td>
+                                <td data-label=" العميل">ايدي اللاعب<br /> 123456789</td>
+                                <td data-label=" النتيجة">فشل الشراء<br />
+                                    قد يكون الايدي<br /> خاطئا</td>
+                                <td data-label="الحالة" class="positive">مكتمل</td>
+                                <td data-label=" السعر الاجمالي">1,000,000,000</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
 
 
+                </div>
+                <div class="pagination d-flex justify-content-center mt-5">
+                    <ul class="list-unstyled d-flex gap-3 justify-content-center align-items-center text-center m-0 p-0">
+                        <li><i class="fa-solid fa-chevron-right"></i></li>
+                        <li><i class="fa-solid fa-chevron-right"></i></li>
+                
+                        <li>30</li>
+                        <li>20</li>
+                        <li>15</li>
+                        <li>...</li>
+                        <li>3</li>
+                        <li class="active-pag">2</li>
+                        <li >1</li>
+                
+                        <li><i class="fa-solid fa-chevron-left"></i></li>
+                        <li><i class="fa-solid fa-chevron-left"></i></li>
+                    </ul>
+                </div>
+                  
             </div>
-        </div>
     </section>
     <!-- end service//  -->
     <!-- start footer//// -->
