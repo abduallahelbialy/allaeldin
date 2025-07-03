@@ -602,6 +602,19 @@ position: relative;
   width: fit-content !important;
   margin: auto;
 }
+.custom-file-input::before {
+  content: 'اختر ملف';
+  display: inline-block;
+  background: transparent;
+  border-left: 1px solid var(--color-lable);
+  border-radius: 3px;
+  padding: 3px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  color: var(--color-lable);
+  font-weight: 800;
+}
 .btn-submit2{
   color: #0c1011;
   background: var(--activ-tab2);
