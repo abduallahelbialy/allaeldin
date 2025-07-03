@@ -502,7 +502,23 @@ body {
   background: transparent;
   border: 1px solid var(--borr);
   border-radius: 8px;
-  width: 188px;
+  width: 294px;
+}
+.modal{
+  --bs-modal-width:639px;
+}
+.form-check-input[type=checkbox] {
+  border-radius: .25em;
+  padding: 7px !important;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border: 1px solid var(--bor-ser);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 /* end Services */
 /* start login page////// */
