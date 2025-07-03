@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>statement</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <!-- //start nav// -->
+    <nav class="navbar navbar-expand-md mt-3">
+        <div class="container">
+            <div class="navbar-a">
+                <a class="navbar-brand fw-bold" href="/index_en.html">
+                    <img src="assets/logo.png" alt="logo" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/home_en.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/order-history">Transfer History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/statement_en.html">Financial Statement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AddressBook_en.html">Address Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/transfer_en.html">Transfer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/transferrequest_en.html">Transfer Request</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login_en.html">Log Out </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2"
+                        style="border: 1px solid #BE9FBE; background-color: var(--bg-user);border-radius: 8px;">
+                        <div class="theme-toggle ">
+                            <button id="darkModeTogglephone">
+                                <span class="light-icon" style="color: #1F5B61;">☀</span>
+                                <span class="dark-icon"><img src="assets/light.png" alt=""></span>
+                            </button>
+                        </div>
+
+                        <a href="/statement.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                            <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
+                        </a>
+                        <div class="dropdown ">
+                            <button class="btn  bg-transparent border-0 " type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-money-check-dollar" style="color: #1F5B61;"></i>
+
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                                    <span><strong>100.</strong>00</span> <span>دولار امريكى</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                                    <span><strong>10,000,000,000.</strong>00</span> <span>ليرة سورية</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                                    <span><strong>6000.</strong>00</span> <span> يورو اوروبي</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasMenu"
+            aria-labelledby="offcanvasMenuLabel">
+            <!-- <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
+                </div> -->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <a href="/dashboard_en.html" class="data-users d-flex flex-column align-items-center ">
+                        <span>Hossam Mohamed</span>
+                        <span>01028924906</span>
+                    </a>
+                    <li class="nav-item-a">
+                        <a class="nav-link " href="/index_en.html">Home</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/order-history"> Transaction Log</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/statement_en.html">Financial Statement</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/AddressBook_en.html">Address Book</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link active" href="/transfer_en.html"> Transfer</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/transferrequest_en.html">Balance Request</a>
+                    </li>
+                    <li class="nav-item-a">
+                        <a class="nav-link" href="/login_en.html">Log Out</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <a href="/statement.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
+                        <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
+                    </a>
+                    <div class="theme-toggle ">
+                        <button id="darkModeToggle">
+                            <span class="light-icon" style="color: #1F5B61;">☀</span>
+                            <span class="dark-icon"><img src="assets/light.png" alt=""></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- //end nav// -->
+
+    <!-- start service//  -->
+    <section class="trasn">
+        <div class="container">
+            <div class="row">
+                <div class="filter-container">
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="start-date" class="label-statment">Start Date</label>
+
+                        <select id="start-date" class="statems-inputs">
+                            <option value="">2024-06-24</option>
+                        </select>
+                    </div>
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="end-date" class="label-statment"> End Date</label>
+
+                        <select class="statems-inputs" id="end-date">
+                            <option value="">2024-06-24</option>
+                        </select>
+                    </div>
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="transition" class="label-statment">Transition type</label>
+                        <select class="statems-inputs" id="trans-type">
+                            <option value="">Transition type</option>
+                        </select>
+                    </div>
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="transaction-type" class="label-statment"> Service</label>
+
+                        <select class="statems-inputs" id="transaction-type">
+                            <option>Service</option>
+                        </select>
+                    </div>
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="count-rows" class="label-statment">Number rows</label>
+                        <select class="statems-inputs" id="count-rows">
+                            <option>Number rows</option>
+                        </select>
+                    </div>
+                    <div class="filter-item ">
+                        <input type="submit" value="Search" class="statems-btn">
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="no-records">No financial records</div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th> Amount</th>
+                                <th>Balance after movement</th>
+                                <th>Service</th>
+                                <th> Transition type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Date">24/10/2025<br>9:12:18</td>
+                                <td data-label="Amount " class="negative">-17,000</td>
+                                <td data-label="Balance after movement">1,000,000,000</td>
+                                <td data-label="service" class="service-info">
+                                    100 diamond<br>freefire<br>by ID
+                                </td>
+                                <td data-label=" Transition type"> rejection operation</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Date">24/10/2025<br>9:12:18</td>
+                                <td data-label="Amount " class="positive">+17,000</td>
+                                <td data-label="Balance after movement">1,000,000,000</td>
+                                <td data-label="service" class="service-info">
+                                    100 diamond<br>freefire<br>by ID
+                                </td>
+                                <td data-label=" Transition type ">رفض العملية</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+    </section>
+    <!-- end service//  -->
+    <!-- start footer//// -->
+    <footer class="py-2 px-0">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/logofooter.png" alt="logo" class="img-fluid logo-footer">
+                    </div>
+                    <div>
+                        <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                            <li class="link-footer"> <a href="/contactUs_en.html" class="text-decoration-none ">Contact
+                                    Us</a></li>
+                            <li class="link-footer"> <a href="/terms_en.html" class="text-decoration-none "> Privacy
+                                    Policy</a> </li>
+                            <li class="link-footer"> <a href="/terms_en.html" class="text-decoration-none "> Terms &
+                                    Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="groupicon d-flex gap-3 align-items-center">
+                        <a href="#" target="_blank">
+                            <img src="assets/facebook.png" alt=" facebook" class="img-fluid">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/whatUp.png" alt=" whatUp" class="img-fluid">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/Social Media Icons Circle.png" alt=" instagram" class="img-fluid">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/send.png" alt=" sned" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="capy text-center"> © 2025 All rights </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- end footer//// -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

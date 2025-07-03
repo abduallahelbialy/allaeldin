@@ -10,6 +10,10 @@
     <title>البيان المالي</title>
 </head>
 
+<style>
+  
+</style>
+  
 <body>
     <!-- //start nav// -->
     <nav class="navbar navbar-expand-md mt-3">
@@ -139,70 +143,80 @@
     <section class="trasn">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-12 col-12">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">تاريج
-                            البدايه</label>
-                        <select class="form-statme" aria-label="Default select example">
-                            <option selected>2024/6/24</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                <div class="filter-container">
+                    <div class="filter-item d-flex flex-column align-items-start">
+                        <label for="start-date" class="label-statment">تاريخ البداية</label>
+                       
+                        <select id="start-date" class="statems-inputs">
+                            <option value="">2024-06-24</option>
                         </select>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-12">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">تاريج
-                            النهاية</label>
-                        <select class="form-statme" aria-label="Default select example">
-                            <option selected>2024/6/24</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                    <div  class="filter-item d-flex flex-column align-items-start">
+                        <label for="end-date" class="label-statment">تاريخ النهاية</label>
+
+                        <select  class="statems-inputs" id="end-date">
+                            <option value="">2024-06-24</option>
+                        </select> 
+                    </div>
+                    <div  class="filter-item d-flex flex-column align-items-start">
+                        <label for="trans-type" class="label-statment"> نوع الحركة</label>
+
+                        <select class="statems-inputs" id="trans-type">
+                            <option value="">نوع الحركة</option>
                         </select>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-12">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">نوع الحركة</label>
-                        <select class="form-statme" aria-label="Default select example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                    <div  class="filter-item d-flex flex-column align-items-start">
+                        <label for="transaction-type" class="label-statment"> الخدمة</label>
+
+                        <select class="statems-inputs" id="transaction-type">
+                            <option>الخدمة</option>
                         </select>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-12">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">الخدمة</label>
-                        <select class="form-statme" aria-label="Default select example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                    <div  class="filter-item d-flex flex-column align-items-start">
+                        <label for="count-rows" class="label-statment"> عدد الأسطر</label>
+
+                        <select class="statems-inputs" id="count-rows">
+                            <option>عدد الأسطر</option>
                         </select>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-12">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold textlabel ">عدد الاسطر</label>
-                        <select class="form-statme" aria-label="Default select example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-12">
-                    <div class="mb-3">
-                        <a href="#" class="btn btn-serstate w-100">بحث</a>
+                    <div  class="filter-item ">
+                       <input type="submit" value="بحث" class="statems-btn" >
                     </div>
                 </div>
 
-
+                <div class="table-wrapper">
+                    <div class="no-records">لا توجد سجلات مالية</div>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>التاريخ</th>
+                                <th>مبلغ الحركة</th>
+                                <th>الرصيد بعد الحركة</th>
+                                <th>الخدمة</th>
+                                <th>نوع الحركة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="التاريخ">24/10/2025<br>9:12:18</td>
+                                <td data-label="مبلغ الحركة" class="negative">-17,000</td>
+                                <td data-label="الرصيد بعد الحركة">1,000,000,000</td>
+                                <td data-label="الخدمة" class="service-info">
+                                    100 diamond<br>freefire<br>by ID
+                                </td>
+                                <td data-label="نوع الحركة">رفض العملية</td>
+                            </tr>
+                            <tr>
+                                <td data-label="التاريخ">24/10/2025<br>9:12:18</td>
+                                <td data-label="مبلغ الحركة" class="positive">+17,000</td>
+                                <td data-label="الرصيد بعد الحركة">1,000,000,000</td>
+                                <td data-label="الخدمة" class="service-info">
+                                    100 diamond<br>freefire<br>by ID
+                                </td>
+                                <td data-label="نوع الحركة">رفض العملية</td>
+                            </tr>
+                        </tbody>          </table>
 
 
             </div>

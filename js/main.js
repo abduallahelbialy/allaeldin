@@ -31,10 +31,10 @@ const currentTheme2 = localStorage.getItem("theme2");
 
       if (currentTheme2 === "dark") {
         document.documentElement.removeAttribute("data-theme");
-        localStorage.setItem("theme2", "light");
+        localStorage.setItem("theme", "light");
       } else {
         document.documentElement.setAttribute("data-theme", "dark");
-        localStorage.setItem("theme2", "dark");
+        localStorage.setItem("theme", "dark");
       }
     });
   }
