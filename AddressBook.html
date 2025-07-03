@@ -50,7 +50,7 @@
                     </ul>
 
                     <div class="d-flex align-items-center gap-2"
-                        style="border: 1px solid #BE9FBE; background-color: #EEDCEE; border-radius: 8px;">
+                        style="border: 1px solid #BE9FBE; background-color: var(--bg-user); border-radius: 8px;">
                         <div class="theme-toggle ">
                             <button id="darkModeTogglephone">
                                 <span class="light-icon" style="color: #1F5B61;">☀</span>
@@ -149,7 +149,53 @@
                     </button>
                 </div>
                 <!-- ///form address/// -->
-                <div class="box_transfer d-flex justify-content-center align-items-center flex-column py-5 px-0 d-none" id="addressForm">
+                <div class="d-flex justify-content-between align-items-center flex-column d-none" id="addressdata">
+                
+                    <div class="box-dataAddress mt-4 mb-2 d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="img-user ">
+                            </div>
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span>محمد محمد</span>
+                                <span>0123456789</span>
+                            </div>
+                
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="icondelet">
+                                <img src="assets/icondelet.png" alt=" icondelet" class="img-fluid">
+                
+                            </div>
+                            <div class="iconeidt">
+                                <img src="assets/iconeidt.png" alt=" iconeidt" class="img-fluid">
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="box-dataAddress mt-4 mb-4 d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="img-user ">
+                            </div>
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <span>محمد محمد</span>
+                                <span>0123456789</span>
+                            </div>
+                
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="icondelet">
+                                <img src="assets/icondelet.png" alt=" icondelet" class="img-fluid">
+                
+                            </div>
+                            <div class="iconeidt">
+                                <img src="assets/iconeidt.png" alt=" iconeidt" class="img-fluid">
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <!-- ///form address/// -->
+                <div class="box_transfer d-flex justify-content-center align-items-center flex-column py-5 px-0 " id="addressForm">
                     <form action="#">
 
                         <div class="mb-3">
@@ -186,52 +232,7 @@
                     </form>
 
                 </div>
-                <!-- ///form address/// -->
-                 <div class="d-flex justify-content-between align-items-center flex-column d-none" id="addressdata">
-
-                     <div class="box-dataAddress mt-4 mb-2 d-flex align-items-center justify-content-between">
-                         <div class="d-flex gap-3 align-items-center">
-                             <div class="img-user ">
-                             </div>
-                             <div class="d-flex flex-column align-items-center gap-2">
-                                 <span>محمد محمد</span>
-                                 <span>0123456789</span>
-                             </div>
-     
-                         </div>
-                         <div class="d-flex gap-3 align-items-center">
-                             <div  class="icondelet">
-                                 <img src="assets/icondelet.png" alt=" icondelet" class="img-fluid">
-     
-                             </div>
-                             <div class="iconeidt" >
-                                <img src="assets/iconeidt.png" alt=" iconeidt" class="img-fluid">
-                             </div>
-     
-                         </div>
-                     </div>
-                     <div class="box-dataAddress mt-4 mb-4 d-flex align-items-center justify-content-between">
-                         <div class="d-flex gap-3 align-items-center">
-                             <div class="img-user ">
-                             </div>
-                             <div class="d-flex flex-column align-items-center gap-2">
-                                 <span>محمد محمد</span>
-                                 <span>0123456789</span>
-                             </div>
-     
-                         </div>
-                         <div class="d-flex gap-3 align-items-center">
-                             <div  class="icondelet">
-                                 <img src="assets/icondelet.png" alt=" icondelet" class="img-fluid">
-     
-                             </div>
-                             <div class="iconeidt" >
-                                <img src="assets/iconeidt.png" alt=" iconeidt" class="img-fluid">
-                             </div>
-     
-                         </div>
-                     </div>
-                 </div>
+               
               
             </div>
         </div>
@@ -277,13 +278,13 @@
     <script src="js/main.js"></script>
     <script>
         document.getElementById("toggleFormBtn").addEventListener("click", function () {
-            const form = document.getElementById("addressForm");
+            const form = document.getElementById("addressdata");
             form.classList.toggle("d-none");
         });
     </script>
     <script>
         document.getElementById("toggleFormBtn2").addEventListener("click", function () {
-            const form = document.getElementById("addressdata");
+            const form = document.getElementById("addressForm");
             form.classList.toggle("d-none");
         });
     </script>

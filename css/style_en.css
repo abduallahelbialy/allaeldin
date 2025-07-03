@@ -13,6 +13,7 @@
   --data-color:#4F4F4F;
   --color-text: #4f4f4f;
   --bg-user:#D9C3D9;
+  --bg-footer:#EEDEEE;
 
   --bg-nav: linear-gradient(to right, #decdde, #eedbee);
   --bg-btn: linear-gradient(to left, #f0ddf0, #d9cdd9);
@@ -37,7 +38,9 @@
 [data-theme="dark"] {
   --bg-mod: #3b3b3b;
   --color-mod: #f6f6f6;
-  --color-footer:#000;
+  --color-footer:#fff;
+  --bg-footer:#3c3d3f;
+
   --data-color:#fff;
   --color-nav: #a8a8a8;
   --bg-nav: linear-gradient(to right, #3c3d3e, #3c3d3e);
@@ -91,7 +94,11 @@ body {
   position: relative;
   transition: background-color 0.3s, color 0.3s;
 }
-
+.offcanvas-body {
+  flex-grow: 1;
+  padding: 0 !important;
+  overflow-y: auto;
+}
 /* body::after {
   content: "";
   position: absolute;
@@ -290,6 +297,38 @@ body {
   border: 1px solid var(--borr);
   border-radius: 8px;
   width: 188px;
+}
+.iti__arrow {
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+  display: none;
+}
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-modal-header-padding);
+  border-bottom: none !important;
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+.modal-footer {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
+  background-color: var(--bs-modal-footer-bg);
+  border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
+  border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+  border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+  border: none !important;
 }
 .data-users {
   border: 1px solid #d8b5d8;
@@ -734,7 +773,7 @@ position: relative;
 /* ///loigin page/// */
 /* start footer//// */
 footer{
-  background-color: #EEDEEE;
+  background-color: var(--bg-footer);
 }
 .link-footer a{
   color: var(--color-footer);

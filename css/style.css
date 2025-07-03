@@ -12,6 +12,7 @@
   --color-text: #4f4f4f;
   --color-lable:#1f5b61;
   --color-footer:#131313;
+  --bg-footer:#EEDEEE;
   --color-das:#636363;
   --bg-fo:#F6E5F6;
   --data-color:#4F4F4F;
@@ -42,10 +43,12 @@
 [data-theme="dark"] {
   --term:#fff;
   --color-das:#a8a8a8;
+  --bg-footer:#3c3d3f;
+  --bg-user:#d9d9d9;
 
   --bg-mod: #3b3b3b;
   --color-mod: #f6f6f6;
-  --color-footer:#000;
+  --color-footer:#fff;
   --bg-fo:#3c3d3f;
   --color-nav: #a8a8a8;
   --bg-nav: linear-gradient(to right, #3c3d3e, #3c3d3e);
@@ -175,10 +178,13 @@ body {
   outline: none;
   color: var(--text-blance) !important;
 }
-
+.btn-close{
+  opacity: 1 !important;
+  color: var(--color-footer) !important;
+}
 .dropdown-menu {
   background: var(--bg-btn);
-  width: 206px;
+  width: 222px;
   border: 1px solid #be9fbe;
   border-radius: 8px;
   margin: 10px 0;
@@ -283,6 +289,11 @@ body {
 .box-search input.expanded {
   max-width: 300px;
 }
+.offcanvas-body {
+  flex-grow: 1;
+  padding: 0 !important;
+  overflow-y: auto;
+}
 
 .box-search i {
   position: absolute;
@@ -361,7 +372,8 @@ body {
   color: var(--color-text);
   cursor: pointer;
 }
-.active-tab {
+
+.active-tab  {
   color: #0c1011;
   background: var(--activ-tab);
   width: 144px;
@@ -372,6 +384,7 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   cursor: pointer;
+  text-align: center;
 }
 .form-select-statment{
   width: 200px;
@@ -405,6 +418,29 @@ position: relative;
   width: 100%;
   max-width: 193px;
   margin: auto;
+}
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-modal-header-padding);
+  border-bottom: none !important;
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+.modal-footer {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
+  background-color: var(--bs-modal-footer-bg);
+  border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
+  border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+  border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+  border: none !important;
 }
 .box-ser2 {
   background: var(--bg-ser2);
@@ -556,11 +592,11 @@ position: relative;
   height: 26px;
   background: transparent;
   border: 1px solid var(--bor-ser);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -ms-border-radius: 4px !important;
+  -o-border-radius: 4px !important;
 }
 /* end Services */
 /* start login page////// */
@@ -583,6 +619,7 @@ position: relative;
 .taps-form  {
   color: #566668;
   cursor: pointer;
+  padding: 0;
 }
 
 .taps-form a:not(.active-tab-form) {
@@ -679,9 +716,18 @@ select:optional{
   background-color: #F7E7F5;
 
  }
+ .iti__arrow {
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+  display: none;
+}
  .phone::placeholder{
   text-align: end;
-  color: #21691f;
+  color: var(--color-lable);
  }
  #password::placeholder{
   text-align: center;
@@ -756,7 +802,7 @@ select:optional{
 /* end login page////// */
 /* start footer//// */
 footer{
-  background-color: #EEDEEE;
+  background-color: var(--bg-footer);
 }
 .link-footer a{
   color: var(--color-footer);
@@ -1046,3 +1092,26 @@ font-weight: 800;
 }
 }
 /* end dashboard page//// */ 
+/* start statement page//// */
+.form-statme{
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #CDB2CD;
+  background: var(--bg-fo);
+  margin: auto;
+  /* color: var(--color-lable); */
+}
+.btn-serstate{
+  width: 105px;
+  height: 48px;
+  border: 1px solid #CDB2CD;
+  border-radius: 8px;
+  background: var(--bg-lang);
+  margin: auto;
+  color: var(--color-lable);
+}
+.btn-serstate:hover{
+  background-color: var(--color-lable);
+}
+/* end statement page//// */

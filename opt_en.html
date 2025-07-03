@@ -38,7 +38,7 @@
                     </ul>
 
                     <div class="d-flex align-items-center gap-2"
-                        style="border: 1px solid #BE9FBE; background-color: #EEDCEE; border-radius: 8px;">
+                        style="border: 1px solid #BE9FBE; background-color: var(--bg-user);border-radius: 8px;">
                         <a href="/opt.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
                             <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
                         </a>
@@ -69,7 +69,7 @@
                     </li>
                 </ul>
                 <div class="d-flex justify-content-between align-items-center">
-                
+
                     <a href="/opt.html" class="d-flex gap-2 align-items-center text-decoration-none mx-2">
                         <i class="fa-solid fa-globe lang" style="color: #1F5B61;"></i>
                     </a>
@@ -90,7 +90,8 @@
         <div class="container text-center">
             <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center taps-form mb-4">
                 <li> <a href="/login.html" class="  text-decoration-none">Login</a></li>
-                <li class="fw-bold active-tab-form"> <a href="/signUp.html" class="active-tab-form"> Create Account</a></li>
+                <li class="fw-bold active-tab-form"> <a href="/signUp.html" class="active-tab-form"> Create Account</a>
+                </li>
                 <li><a href="/rest.html" class="  text-decoration-none"> Recovery </a></li>
             </ul>
 
@@ -116,7 +117,8 @@
                                 <input type="tel" maxlength="1" data-index="6">
                             </div>
                             <p class="time mt-4 fs-3" id="timer">60</p>
-                            <p id="errorMsg" style="color: red; display: none;">Please enter the full verification code.</p>
+                            <p id="errorMsg" style="color: red; display: none;">Please enter the full verification code.
+                            </p>
                         </div>
                     </div>
 
@@ -136,42 +138,45 @@
     </section>
 
     <!-- end login//  -->
-<!-- start footer//// -->
-<footer class="py-2 px-0">
-    <div class="container">
-        <div class="row">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <img src="assets/logofooter.png" alt="logo" class="img-fluid logo-footer">
+    <!-- start footer//// -->
+    <footer class="py-2 px-0">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/logofooter.png" alt="logo" class="img-fluid logo-footer">
+                    </div>
+                    <div>
+                        <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
+                            <li class="link-footer"> <a href="/contactUs_en.html" class="text-decoration-none ">Contact
+                                    Us</a></li>
+                            <li class="link-footer"> <a href="/terms_en.html" class="text-decoration-none "> Privacy
+                                    Policy</a> </li>
+                            <li class="link-footer"> <a href="/terms_en.html" class="text-decoration-none "> Terms &
+                                    Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="groupicon d-flex gap-3 align-items-center">
+                        <a href="#" target="_blank">
+                            <img src="assets/facebook.png" alt=" facebook" class="img-fluid">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/whatUp.png" alt=" whatUp" class="img-fluid">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/Social Media Icons Circle.png" alt=" instagram" class="img-fluid">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/send.png" alt=" sned" class="img-fluid">
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <ul class="list-unstyled d-flex justify-content-center gap-3 align-items-center">
-                        <li class="link-footer"> <a href="/contactUs_en.html" class="text-decoration-none ">Contact Us</a></li>
-                        <li class="link-footer"> <a href="/terms_en.html" class="text-decoration-none "> Privacy Policy</a> </li>
-                        <li class="link-footer"> <a href="/terms_en.html" class="text-decoration-none "> Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="groupicon d-flex gap-3 align-items-center">
-                    <a href="#" target="_blank">
-                        <img src="assets/facebook.png" alt=" facebook" class="img-fluid">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="assets/whatUp.png" alt=" whatUp" class="img-fluid">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="assets/Social Media Icons Circle.png" alt=" instagram" class="img-fluid">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="assets/send.png" alt=" sned" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="capy text-center"> © 2025 All rights </div>
+                <div class="capy text-center"> © 2025 All rights </div>
 
+            </div>
         </div>
-    </div>
-</footer>
-<!-- end footer//// -->
+    </footer>
+    <!-- end footer//// -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script>
