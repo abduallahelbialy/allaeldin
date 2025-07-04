@@ -112,6 +112,9 @@ body {
   overflow-x: hidden;
   position: relative;
   transition: background-color 0.3s, color 0.3s;
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh; */
 }
 
 /* body::after {
@@ -831,12 +834,13 @@ select:optional{
 /* end login page////// */
 /* start footer//// */
 footer {
-  /* position: fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; */
+  width: 100%;
   background-color: var(--bg-footer);
-  z-index: 1000;
+  padding: 20px 0 !important;
+
   
 }
 

@@ -6,6 +6,10 @@
 * {
   box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 :root {
   --color-nav: #1f5b61;
   --color-mod: #1f5b61;
