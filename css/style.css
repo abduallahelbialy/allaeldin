@@ -429,7 +429,7 @@ body {
 }
 .tabs li{
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 800;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
   flex: 1;
@@ -785,6 +785,10 @@ select:optional{
     background-color: var(--bg-color);
   color: var(--color-lable);
 }
+/* .numes:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
+} */
 .pas{
   width: 363px;
   height: 48px;
@@ -793,7 +797,10 @@ select:optional{
     background-color: var(--bg-color);
   color: var(--color-lable);
 }
-
+/* .pas:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
+} */
  .phone {
   width: 348px;
   height: 48px;
@@ -803,6 +810,10 @@ select:optional{
     background-color: var(--bg-color);
   color: var(--color-lable);
  }
+ /* .phone:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
+ } */
  .newpas{
   width: 348px;
   height: 48px;
