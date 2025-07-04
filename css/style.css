@@ -621,7 +621,7 @@ position: relative;
 }
 .hidden-box {
   display: none;
-  background-color: #F7E7F5;
+  background-color: var(--bg-fo);
   color: var(--text-color);
   padding: 10px;
   border-radius: 8px;
