@@ -677,6 +677,19 @@ position: relative;
   color: var(--color-lable);
   font-weight: 800;
 }
+.active-pag{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #F7EBDB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.pagination li ,i{
+  cursor: pointer;
+}
 .btn-submit2{
   color: #0c1011;
   background: var(--activ-tab2);

@@ -6,6 +6,10 @@
 * {
   box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 :root {
   --color-nav: #1f5b61;
   --color-mod: #1f5b61;
@@ -826,9 +830,16 @@ select:optional{
 
 /* end login page////// */
 /* start footer//// */
-footer{
+footer {
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; */
   background-color: var(--bg-footer);
+  z-index: 1000;
+  
 }
+
 .link-footer a{
   color: var(--color-footer);
   font-size: 14px;
