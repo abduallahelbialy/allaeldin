@@ -329,6 +329,12 @@ body {
   flex-grow: 1;
   padding: 0 !important;
   overflow-y: auto;
+  border: 1px solid var(--bor-ser);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .box-search i {
@@ -341,7 +347,7 @@ body {
   color: #777;
 }
 .data-users {
-  border: 1px solid #d8b5d8;
+  /* border: 1px solid #d8b5d8; */
   background: var(--bg-user);
   /* box-shadow: var(--bg-shdow); */
   border-radius: 8px;
