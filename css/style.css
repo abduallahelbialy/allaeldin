@@ -488,7 +488,13 @@ position: relative;
   width: 100%;
   max-width: 193px;
   margin: auto;
+  transition: box-shadow 0.3s ease; /* سلاسة عند التحويل */
 }
+
+.box-ser1:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* بوكس شادو بسيط */
+}
+
 .modal-header {
   display: flex;
   flex-shrink: 0;
@@ -522,7 +528,13 @@ position: relative;
   max-width: 193px;
   height: 209px;
   margin: auto;
+  transition: box-shadow 0.3s ease; /* يضيف تأثير ناعم */
 }
+
+.box-ser2:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* نفس تأثير الظل */
+}
+
 .text-ser1 h3 {
   color: var(--c-ser1);
   font-size: 22px;
