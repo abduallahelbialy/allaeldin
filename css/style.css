@@ -655,19 +655,33 @@ position: relative;
   border-radius: 8px;
   width: 188px;
 }
-.form-check-input[type=checkbox] {
-  border-radius: .25em;
+.form-check-input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 4px !important;
   padding: 7px !important;
   width: 26px;
   height: 26px;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid var(--bor-ser);
-  border-radius: 4px !important;
-  -webkit-border-radius: 4px !important;
-  -moz-border-radius: 4px !important;
-  -ms-border-radius: 4px !important;
-  -o-border-radius: 4px !important;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
 }
+
+.form-check-input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--color-lable); 
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 /* end Services */
 /* start login page////// */
 .tab-content{
