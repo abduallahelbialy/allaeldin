@@ -350,7 +350,8 @@ body {
 }
 .data-users {
   /* border: 1px solid #d8b5d8; */
-  background: var(--bg-user);
+  background: var(--bg-input);
+  border: 1px solid var(--bor-ser);
   /* box-shadow: var(--bg-shdow); */
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -377,6 +378,9 @@ body {
     transition: max-width 0.3s ease;
     outline: none;
     margin: auto;
+  }
+  .data-users{
+border: none;
   }
   .box-search {
   max-width: 100% !important;

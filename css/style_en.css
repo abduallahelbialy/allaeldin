@@ -376,6 +376,7 @@ body {
   /* border: 1px solid #d8b5d8; */
   background: var(--bg-input);
   /* box-shadow: var(--bg-shdow); */
+  border: 1px solid var(--bor-ser);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -397,6 +398,9 @@ body {
   }
   .box-search{
     max-width: 100% !important;
+  }
+  .data-users{
+    border: none;
   }
   .box-search input {
     border: 1px solid #d8b5d8;
