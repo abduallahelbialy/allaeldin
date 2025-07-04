@@ -2,6 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <script>
+        const theme = localStorage.getItem("theme") || localStorage.getItem("theme2");
+        if (theme === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.min.css">
@@ -190,7 +196,7 @@
                     </ul>
                 </div>
 
-                <div class="products row m-auto">
+                <div class="products row m-auto ">
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 product mb-5" data-category="programs">
                         <div class="box-ser1 position-relative" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <div class="d-flex flex-column align-items-center text-ser1">

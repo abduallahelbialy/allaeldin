@@ -6,9 +6,12 @@
 * {
   box-sizing: border-box;
 }
-html, body {
+/* html, body {
   height: 100%;
   margin: 0;
+} */
+.no-transition * {
+  transition: none !important;
 }
 :root {
   --color-nav: #1f5b61;
@@ -77,7 +80,7 @@ html, body {
   --bg-of: #3a3a3a;
   --bg-color: #121212;
   --text-color: #fff;
-  --color-lable:#fff;
+  --color-lable:#F6F6F6;
   --data-color:#000;
   --selec-color:#000;
 
@@ -701,7 +704,8 @@ select:optional{
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
+  color: var(--color-lable);
 }
 
 .otp-inputs input:focus {
@@ -714,14 +718,16 @@ select:optional{
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
+  color: var(--color-lable);
 }
 .pas{
   width: 363px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
+  color: var(--color-lable);
 }
 
  .phone {
@@ -730,14 +736,16 @@ select:optional{
   text-align: end;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
+  color: var(--color-lable);
  }
  .newpas{
   width: 348px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
+  color: var(--color-lable);
  }
  #password {
   /* width: 348px; */
@@ -745,7 +753,7 @@ select:optional{
   text-align: start;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
 
  }
  .iti__arrow {
@@ -826,20 +834,21 @@ select:optional{
   text-align: end;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
 }
 
 
-
+/* .row{
+  margin-bottom: 140px !important;
+} */
 /* end login page////// */
 /* start footer//// */
-footer {
+.footerspial {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: var(--bg-footer);
-  padding: 20px 0 !important;
 
   
 }

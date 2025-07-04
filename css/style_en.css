@@ -6,9 +6,12 @@
 * {
   box-sizing: border-box;
 }
-html, body {
+/* html, body {
   height: 100%;
   margin: 0;
+} */
+.no-transition * {
+  transition: none !important;
 }
 :root {
   --color-nav: #1f5b61;
@@ -18,6 +21,7 @@ html, body {
   --color-text: #4f4f4f;
   --bg-user:#D9C3D9;
   --bg-footer:#EEDEEE;
+  --color-lable:#1f5b61;
 
   --bg-nav: linear-gradient(to right, #decdde, #eedbee);
   --bg-btn: linear-gradient(to left, #f0ddf0, #d9cdd9);
@@ -66,6 +70,7 @@ html, body {
   --bg-of: #3a3a3a;
   --bg-color: #121212;
   --text-color: #fff;
+  --color-lable:#F6F6F6;
 }
 
 .theme-toggle button {
@@ -629,22 +634,24 @@ position: relative;
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
   transition: border-color 0.3s;
+  color: var(--color-lable);
 }
 .numes{
   width: 233px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
+  color: var(--color-lable);
 }
 .pas{
   width: 363px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
 }
 .btn-submit{
   color: #0c1011;
@@ -661,8 +668,8 @@ position: relative;
   border: none;
 }
 .tab-content{
-  background: #F6E5F6;
-  padding: 20px;
+  background: var(--bg-fo);
+    padding: 20px;
   border-radius: 16px;
   box-shadow: var(--bg-shdow);
   width: fit-content !important;
@@ -693,6 +700,7 @@ position: relative;
 }
 .pagination li ,i{
   cursor: pointer;
+
 }
 .btn-submit2{
   color: #0c1011;
@@ -720,7 +728,8 @@ position: relative;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
+  color: var(--color-lable);
  }
 @media (max-width:477px) {
   .pas{
@@ -751,7 +760,7 @@ position: relative;
   text-align: end;
   border-radius: 8px;
   border: 1px solid #CDB2CD;
-  background-color: #F7E7F5;
+  background-color: var(--bg-color);
 }
 }
  .phone {
@@ -814,6 +823,15 @@ position: relative;
 /* start footer//// */
 footer{
   background-color: var(--bg-footer);
+}
+.footerspial {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-footer);
+
+  
 }
 .link-footer a{
   color: var(--color-footer);

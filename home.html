@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" >
 
 <head>
+    <script>
+        // دا بيتنفذ على طول قبل أي حاجة
+        const theme = localStorage.getItem("theme") || localStorage.getItem("theme2");
+        if (theme === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>الرئيسية</title>
+  
 </head>
 
 <body>
@@ -189,7 +197,7 @@
                     </ul>
                 </div>
 
-                <div class="products row m-auto">
+                <div class="products row m-auto mb-5">
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 product mb-5" data-category="programs">
                         <div class="box-ser1 position-relative" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <div class="d-flex flex-column align-items-center text-ser1">
@@ -652,7 +660,7 @@
 
 
                 </div>
-                <div class="pagination d-flex justify-content-center mt-5">
+                <div class="pagination d-flex justify-content-center mt-5 mb-5">
                     <ul
                         class="list-unstyled d-flex gap-3 justify-content-center align-items-center text-center m-0 p-0">
                         <li><i class="fa-solid fa-chevron-right"></i></li>
