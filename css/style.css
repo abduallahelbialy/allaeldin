@@ -760,7 +760,7 @@ position: relative;
   font-size: 20px;
 }
 select:optional{
-  color: var(--selec-color);
+  color: var(--color-lable);
   font-weight: 500;
 }
 
