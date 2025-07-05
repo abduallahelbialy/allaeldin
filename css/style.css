@@ -379,6 +379,11 @@ body {
     outline: none;
     margin: auto;
   }
+  .btn-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .data-users{
 border: none;
   }
@@ -574,6 +579,7 @@ position: relative;
 .title-m {
   color: var(--color-active);
   font-size: 22px;
+  margin-top: -16px;
 }
 .textlabel {
   color: var(--color-lable);
@@ -803,10 +809,10 @@ select:optional{
     background-color: var(--bg-color);
   color: var(--color-lable);
 }
-/* .numes:focus{
+.numes:focus{
   background-color: var(--bg-fo) !important;
   color: var(--color-lable);
-} */
+}
 .pas{
   width: 363px;
   height: 48px;
@@ -815,10 +821,10 @@ select:optional{
     background-color: var(--bg-color);
   color: var(--color-lable);
 }
-/* .pas:focus{
+.pas:focus{
   background-color: var(--bg-fo) !important;
   color: var(--color-lable);
-} */
+}
  .phone {
   width: 348px;
   height: 48px;
@@ -828,16 +834,20 @@ select:optional{
     background-color: var(--bg-color);
   color: var(--color-lable);
  }
- /* .phone:focus{
+ .phone:focus{
   background-color: var(--bg-fo) !important;
   color: var(--color-lable);
- } */
+ }
  .newpas{
   width: 348px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid var(--bor-ser);
     background-color: var(--bg-color);
+  color: var(--color-lable);
+ }
+ .newpas:focus{
+  background-color: var(--bg-fo) !important;
   color: var(--color-lable);
  }
  #password {

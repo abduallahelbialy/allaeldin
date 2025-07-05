@@ -599,6 +599,7 @@ body {
 .title-m {
   color: var(--color-active);
   font-size: 22px;
+  margin-top: -16px;
 }
 .textlabel {
   color: var(--color-nav);
@@ -808,6 +809,11 @@ position: relative;
   .pas{
     width: 268px;
   }
+  .btn-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .btn-login , .btn-pay ,.btn-submit ,.btn-submit2{
     color: #0c1011;
     background: var(--activ-tab);
@@ -854,6 +860,10 @@ position: relative;
   text-align: start;
   color: var(--color-lable);
  }
+ .phone:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
+ }
  #password::placeholder{
   text-align: center;
   color: #21691f;
@@ -863,6 +873,18 @@ position: relative;
   width: 348px; 
   margin: auto;
 }
+.pas:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
+}
+.numes:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
+}
+.newpas:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
+ }
 
 .password-container input {
   width: 100%;
