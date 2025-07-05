@@ -17,6 +17,25 @@
 </head>
 
 <style>
+    @media (max-width: 477px) {
+        body::after {
+  content: "";
+  position: absolute;
+  top: 8%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-image: url(../assets/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 300px;
+  height: 500px;
+  opacity: 0.1; 
+  pointer-events: none; 
+  z-index: 0;
+}
+ 
+    }
 
 </style>
 
@@ -28,7 +47,23 @@
                 <a class="navbar-brand fw-bold" href="/index.html">
                     <img src="assets/logo.png" alt="logo" class="img-fluid">
                 </a>
-
+                <div class="dropdown d-block d-md-none">
+                    <button class="btn btn-trans dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-money-check-dollar" style="color: #1F5B61;"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                            <span><strong>100.</strong>00</span> <span>دولار امريكى</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                            <span><strong>10,000,000,000.</strong>00</span> <span>ليرة سورية</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center  dropdown-item">
+                            <span><strong>6000.</strong>00</span> <span> يورو اوروبي</span>
+                        </li>
+                
+                    </ul>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
                     aria-controls="offcanvasMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -147,14 +182,14 @@
     <!-- //end nav// -->
 
     <!-- start service//  -->
-    <section class="trasn">
+    <section class="py-4 px-0">
         <div class="container">
             <div class="row">
                 <div class="filter-container mb-4">
                     <div class="filter-item d-flex flex-column align-items-start">
                         <label for="trans-type" class="label-statment"> ادخل البيانات</label>
 
-                        <input type="text" class="statems-inputs" id="trans-type" />
+                        <input type="text" class="statems-inputs" id="trans-type" style="width: 350px;" />
 
 
                     </div>
@@ -176,7 +211,7 @@
                     <div class="filter-item d-flex flex-column align-items-start">
                         <label for="transaction-type" class="label-statment"> الحالة</label>
 
-                        <select class="statems-inputs" id="transaction-type">
+                        <select class="statems-inputs" id="transaction-type" >
                             <option>الحالة</option>
                         </select>
                     </div>

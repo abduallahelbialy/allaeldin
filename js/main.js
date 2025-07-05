@@ -53,8 +53,11 @@ input.addEventListener("blur", () => {
   if (input.value.trim() === "") {
     input.classList.remove("expanded");
     icon.style.opacity = "1";
+  } else {
+    input.classList.add("expanded"); // يبقى كبير لو فيه نص
   }
 });
+
 
 
 ///search////
