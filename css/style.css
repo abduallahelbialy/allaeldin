@@ -660,9 +660,14 @@ position: relative;
   text-align: center;
 }
 .form-control {
-  background: transparent;
-  border: 1px solid var(--borr);
+  background: var(--bg-fo);
+  border: 1px solid var(--bor-ser);
   border-radius: 8px;
+  color: var(--color-lable);
+}
+.form-control:focus{
+  background-color: var(--bg-fo) !important;
+  color: var(--color-lable);
 }
 .form-select {
   background: transparent;
