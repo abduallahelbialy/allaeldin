@@ -763,7 +763,9 @@ select:optional{
   color: var(--color-lable);
   font-weight: 500;
 }
-
+select:focus{
+  background: var(--bg-fo);
+}
 
 .center-content {
   /* min-height: 80vh; */
