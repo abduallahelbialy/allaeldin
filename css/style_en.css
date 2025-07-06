@@ -603,7 +603,7 @@ body {
   margin-top: -16px;
 }
 .textlabel {
-  color: var(--color-nav);
+  color: var(--color-lable);
 }
 .btn-pay {
   color: #0c1011;
