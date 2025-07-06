@@ -1459,7 +1459,7 @@ td {
 }
 
 tbody tr {
-  /* border-top: 1px solid #ddd; */
+  border-bottom: 1px solid #B3B3B3;
 }
 
 .negative {
