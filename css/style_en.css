@@ -813,6 +813,10 @@ position: relative;
   .pas{
     width: 268px;
   }
+  .new-icon{
+    margin-top: 15px !important;
+  }
+  
   .forlogoo{
     margin-bottom: 1rem;
   }
@@ -912,7 +916,7 @@ position: relative;
   transform: translateY(-50%);
   cursor: pointer;
   font-size: 18px;
-  color: #666;
+  color: var(--color-lable);
 }
 .btn-login{
   color: #0c1011;
