@@ -824,9 +824,7 @@ position: relative;
     width: 144px !important;
     margin-top: 10px;
   }
-  .toggle-password{
-    margin-top: 15px !important;
-  }
+ 
   .btn-dashboard{
     display: flex;
     justify-content: center;
