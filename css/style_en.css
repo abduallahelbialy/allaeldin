@@ -104,6 +104,8 @@ body {
   font-weight: bold;
   overflow-x: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
   transition: background-color 0.3s, color 0.3s;
 }
 .offcanvas-body {
@@ -117,22 +119,7 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
-/* body::after {
-  content: "";
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  background-image: url(../assets/logo.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 200px;
-  height: 500px;
-  opacity: 0.1; 
-  pointer-events: none; 
-  z-index: 0;
-} */
+
 
 section{
   flex: 1;
