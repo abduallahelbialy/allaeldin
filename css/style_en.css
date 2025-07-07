@@ -134,6 +134,13 @@ body {
   z-index: 0;
 } */
 
+section{
+  flex: 1;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
 /* //start navbar/// */
 .navbar-brand img {
   max-width: 70px;
@@ -935,7 +942,7 @@ position: relative;
 footer{
   background-color: var(--bg-footer);
 }
-.footerspial {
+/* .footerspial {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -943,7 +950,7 @@ footer{
   background-color: var(--bg-footer);
 
   
-}
+} */
 .link-footer a{
   color: var(--color-footer);
   font-size: 14px;

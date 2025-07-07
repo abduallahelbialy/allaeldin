@@ -121,9 +121,17 @@ body {
   transition: background-color 0.3s, color 0.3s;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  flex: 1;
+  /* min-height: 100vh; */
+}
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
+section{
+  flex: 1;
+}
 .btn-close {
   background: none !important;
   color: #000;
@@ -981,13 +989,13 @@ select:focus {
 } */
 /* end login page////// */
 /* start footer//// */
-.footerspial {
+/* .footerspial {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: var(--bg-footer);
-}
+} */
 footer {
   background-color: var(--bg-footer);
   background-size: cover;
